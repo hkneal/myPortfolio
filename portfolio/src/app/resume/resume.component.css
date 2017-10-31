@@ -1,0 +1,306 @@
+.main {
+    position: absolute;
+    margin-top: 3.75rem;
+}
+
+.sidebar {
+    vertical-align: top;
+    width: 16%;
+    height: 100%;
+    background-color: rgb(57, 54, 54);
+    /* background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(63, 64, 66)), to(rgb(126, 130, 134)));
+    background-image: -webkit-linear-gradient(top, rgb(63, 64, 66), rgb(126, 130, 134));
+    background-image: -moz-linear-gradient(top, rgb(63, 64, 66), rgb(126, 130, 134));
+    background-image: linear-gradient(to bottom, rgb(63, 64, 66), rgb(126, 130, 134)); */
+    /* background-color: black; */
+    display: inline-block;
+    /* position: absolute; */
+    padding: 10px;
+    padding-bottom: 15%;
+}
+
+.page {
+    background-color: white;
+    width: 80%;
+    border: 2px solid lightgrey;
+    padding: 10px;
+    padding-right: 0px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(35, 38, 41);
+    display: inline-block;
+}
+
+footer {
+    background-color: black;
+    height: 3.75em;
+    max-width: 100%;
+}
+
+#title {
+    color: white;
+    margin: 10px;
+    text-align: center;
+    color: rgb(5, 118, 238);
+    color: rgb(63, 64, 66);
+    font-size: 13pt;
+    font-family: 'Open Sans', regular italic, sans-serif;
+    font-family: quasimoda-2, sans-serif;
+    /* font-family: quasimoda, sans-serif; */
+    font-family: minerva-modern, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+#titleSkills {
+    color: white;
+    margin: 10px;
+    text-align: center;
+    color: rgb(56, 57, 58);
+    /* color: rgb(12, 41, 168); */
+    color: black;
+    color: rgb(174, 209, 243);
+    /* color: rgb(5, 118, 238); */
+    font-size: 14pt;
+    font-family: 'Open Sans', regular italic, sans-serif;
+    font-family: quasimoda-2, sans-serif;
+    /* font-family: quasimoda, sans-serif; */
+    /* font-family: minerva-modern, sans-serif; */
+    font-style: normal;
+    font-weight: 400;
+}
+
+#firstName {
+    color: rgb(47, 79, 114);
+    /* color: rgb(5, 118, 238); */
+    color: rgb(56, 96, 138);
+    color: rgb(44, 102, 160);
+    color: rgb(5, 118, 238);
+    color: rgb(140, 181, 225);
+    margin: 10px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    /* margin-left: 30%;
+    text-align: left; */
+    font-family: 'Open Sans', regular italic, sans-serif;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#lastName {
+    color: rgb(143, 144, 145);
+    color: rgb(184, 186, 187);
+    color: rgb(230, 230, 230);
+    margin: 10px;
+    margin-bottom: 0px;
+    margin-left: 2px;
+    text-align: center;
+    font-family: 'Open Sans', regular italic, sans-serif;
+    display: inline-block;
+}
+
+#stackshare {
+    width: 95%;
+    margin: 10px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    display: block;
+}
+
+#stackshareA {
+    color: #0a12e2;
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(119, 117, 228);
+    font-family: 'Open Sans', regular italic, sans-serif;
+    font-family: quasimoda-2, sans-serif;
+    /* font-family: quasimoda, sans-serif; */
+    /* font-family: minerva-modern, sans-serif; */
+    font-style: normal;
+    font-weight: 400;
+}
+
+h3 {
+    color: #0E81B6;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sideTitle {
+    text-align: right;
+    color: rgb(143, 144, 145);
+    color: rgb(184, 186, 187);
+    color: rgb(230, 230, 230);
+    font-family: 'Open Sans', regular italic, sans-serif;
+    font-family: quasimoda-2, sans-serif;
+    /* font-family: quasimoda, sans-serif; */
+    /* font-family: minerva-modern, sans-serif; */
+    font-style: normal;
+    font-weight: 400;
+}
+
+img {
+    width: 90%;
+    margin: 10px;
+    margin-left: 12px;
+    margin-top: 2px;
+}
+
+.profile {
+    width: 20%;
+    margin: 10px;
+    background-color: white;
+    border: 2px solid lightgrey;
+    font-size: 12pt;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(35, 38, 41);
+    display: inline-block;
+}
+
+.experience {
+    /* width: 55%; */
+    margin-top: 10px;
+    border: 2px solid lightgrey;
+    padding: 10px;
+    /* border-radius: 5px; */
+    /* box-shadow: 5px 5px 5px rgb(35, 38, 41); */
+    display: inline-block;
+    /* font-family: 'Open Sans', regular italic, sans-serif; */
+    font-family: quasimoda-2, sans-serif;
+    /* font-family: quasimoda, sans-serif; */
+    /* font-family: minerva-modern, sans-serif; */
+    font-family: fanwood, serif;
+    /* font-family: omnes-pro, sans-serif; */
+    font-style: normal;
+    font-weight: 100;
+}
+
+ul {
+    margin: 20px;
+    margin-top: 10px;
+}
+
+.items {
+    margin: 20px;
+}
+
+.icons {
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+.skills {
+    height: 97%;
+    width: 13%;
+    margin: 10px;
+    margin-top: 10px;
+    border: 19px solid lightgrey;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgb(35, 38, 41);
+    display: inline-block;
+    border-radius: 175px;
+    vertical-align: top;
+    background-color: rgb(157, 220, 245);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(126, 130, 134)), to(rgb(63, 64, 66)));
+    background-image: -webkit-linear-gradient(top, rgb(126, 130, 134), rgb(63, 64, 66));
+    background-image: -moz-linear-gradient(top, rgb(126, 130, 134), rgb(63, 64, 66));
+    background-image: linear-gradient(to bottom, rgb(126, 130, 134), rgb(63, 64, 66));
+}
+
+.education,
+.recognitions {
+    text-align: center;
+    /* width: 27%; */
+    margin-top: 10px;
+    border: 2px solid lightgrey;
+    padding: 10px;
+    /* border-radius: 5px; */
+    /* box-shadow: 5px 5px 5px rgb(35, 38, 41); */
+    display: block;
+    font-family: quasimoda-2, sans-serif;
+    /* font-family: quasimoda, sans-serif; */
+    /* font-family: minerva-modern, sans-serif; */
+    font-family: fanwood, serif;
+    /* font-family: omnes-pro, sans-serif; */
+    font-style: normal;
+    font-weight: 100;
+}
+
+.hrTop {
+    width: 75%;
+    margin-left: 10%;
+}
+
+#innerCircle {
+    margin-top: 24px;
+    background-color: white;
+    /* width: 90%; */
+    height: 82%;
+    border-radius: 108px;
+    padding: 20px;
+}
+
+#java,
+#javascript,
+#python {
+    width: 75%;
+}
+
+#angular {
+    margin: 5px;
+    margin-top: 0px;
+}
+
+#django,
+#nodejs {
+    margin-bottom: 0px;
+}
+
+#javascript {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#nodejs {
+    width: 65%;
+    margin-left: 20px;
+}
+
+#codingDojo,
+#grambling,
+#ibm {
+    width: 10%;
+}
+
+#educationAndExperience {
+    width: 79%;
+    display: inline-block;
+}
+
+#downloadDiv {
+    text-align: center;
+    margin-top: 99%;
+    color: rgb(230, 230, 230);
+}
+
+#download {
+    width: 52%;
+}
+
+#downloadA {
+    color: white;
+    text-decoration: none;
+}
+
+#downloadA:active {
+    font-weight: bold;
+}
+
+#downloadA:hover {
+    font-weight: bold;
+    color: rgb(140, 181, 225);
+}

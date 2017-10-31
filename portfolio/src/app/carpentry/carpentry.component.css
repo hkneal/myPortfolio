@@ -1,0 +1,246 @@
+footer {
+    background-color: black;
+    height: 3.75em;
+    width: 100%;
+    margin-top: calc(14% - 3.75em);
+    position: absolute;
+}
+
+.treehouseMain {
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/images/Fotosearch_k17405522.jpg");
+    background-size: 100%;
+    position: fixed;
+    margin-top: 3.75rem;
+}
+
+.vertical-Line {
+    margin-left: 20px;
+    display: inline-block;
+    width: 0;
+    height: 1.7em;
+    border-right: 1px solid rgb(22, 22, 22);
+}
+
+#treehouseH1 {
+    margin-left: 12%;
+    /* font-size: 6.375rem; */
+    font-family: quasimoda-2, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    /* font-family: minerva-modern, sans-serif; */
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    display: inline-block;
+}
+
+#treehouseH1:hover,
+.menuItem:hover {
+    color: black;
+}
+
+.menuItem {
+    margin-left: 20px;
+    font-family: quasimoda-2, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    display: inline-block;
+}
+
+.treehouse {
+    /* margin: 20px;
+    margin-left: 80px; */
+    width: 100%;
+    position: absolute;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(194, 200, 208)), to(rgb(15, 15, 15)));
+    background-image: -webkit-linear-gradient(top, rgb(194, 200, 208), rgb(15, 15, 15));
+    background-image: -moz-linear-gradient(top, rgb(194, 200, 208), rgb(15, 15, 15));
+    background-image: linear-gradient(to bottom, rgb(194, 200, 208), rgb(15, 15, 15));
+}
+
+.pictureViewer {
+    position: absolute;
+    margin: 70px;
+    margin-top: 80px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(194, 200, 208)), to(rgb(63, 64, 66)));
+    background-image: -webkit-linear-gradient(top, rgb(194, 200, 208), rgb(63, 64, 66));
+    background-image: -moz-linear-gradient(top, rgb(194, 200, 208), rgb(63, 64, 66));
+    background-image: linear-gradient(to bottom, rgb(194, 200, 208), rgb(63, 64, 66));
+    border: 5px solid rgb(253, 254, 255);
+    box-shadow: 5px 5px 10px black;
+    border-radius: 50px;
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.pictureViewer p {
+    margin: 10px;
+    color: white;
+    font-family: quasimoda-2, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    /* font-family: quasimoda, sans-serif; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+img {
+    margin: 10px;
+    width: 218px;
+    max-height: 200px;
+    display: inline-block;
+    /* border: 5px solid white; */
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px black;
+}
+
+.hobbies {
+    color: white;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(183, 183, 183)), to(rgb(33, 34, 43)));
+    background-image: -webkit-linear-gradient(top, rgb(183, 183, 183), rgb(33, 34, 43));
+    background-image: -moz-linear-gradient(top, rgb(183, 183, 183), rgb(33, 34, 43));
+    background-image: linear-gradient(to bottom, rgb(183, 183, 183), rgb(33, 34, 43));
+    /* position: absolute; */
+    max-width: 50%;
+    margin-left: 25%;
+    margin-top: 10rem;
+    z-index: 9999;
+    border-radius: 50px;
+    border: 2px solid rgb(253, 254, 255);
+    box-shadow: 5px 5px 10px black;
+    /* border: 2px solid rgb(177, 174, 174); */
+    padding: 10px;
+    /* text-align: center; */
+}
+
+.hobbies p {
+    margin: 0px;
+    text-align: center;
+    margin-top: .1875rem;
+    font-family: quasimoda-2, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-style: normal;
+    font-size: .75rem;
+    font-weight: 400;
+    color: rgb(252, 249, 249);
+}
+
+#home,
+#gamingPic,
+#parentingPic {
+    margin: 20px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+}
+
+#home {
+    width: 213px;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+#gamingPic {
+    max-width: 28%;
+    margin-left: 1%;
+}
+
+#parentingPic {
+    max-width: 24.7%;
+    margin-left: 1%;
+}
+
+#gaming,
+#parenting {
+    display: inline-block;
+    margin: 10px;
+    margin-top: 0px;
+    margin-left: 50px;
+}
+
+#gaming {
+    margin-left: 190px;
+    position: inherit;
+}
+
+#parenting {
+    margin-left: 140px;
+}
+
+#activities {
+    vertical-align: middle;
+    max-width: 22%;
+    margin-right: 10px;
+    position: inherit;
+}
+
+#homeTag {
+    margin-left: 110px;
+}
+
+#entertainmentP {
+    margin: 5px;
+    margin-bottom: 0;
+}
+
+a {
+    color: inherit;
+    color: white;
+    text-decoration: none;
+    font-family: quasimoda-2, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+a:hover {
+    color: rgb(163, 159, 157);
+}
+
+#otherInterests {
+    margin-left: 36%;
+    display: inline-block;
+}
+
+#whoAmI {
+    margin-top: 47%;
+}
+
+#newspaperPic {
+    width: 20%;
+    position: inherit;
+    margin: 10px;
+    /* margin-top: 167px; */
+    margin-left: 40%;
+    vertical-align: middle;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+}
+
+h2 {
+    text-align: center;
+    font-family: quasimoda-2, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    /* font-family: quasimoda, sans-serif; */
+    font-style: normal;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: white;
+}
+
+#close {
+    display: inline-block;
+    margin-top: 1%;
+    margin-left: 25%;
+    font-family: quasimoda-2, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 400;
+}

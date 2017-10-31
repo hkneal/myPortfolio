@@ -1,0 +1,210 @@
+main {
+    background-color: white;
+    /* max-height: 100%;
+    max-width: 100%; */
+}
+
+.background {
+    background-color: black;
+    height: 3.75em;
+    width: 100%;
+    position: absolute;
+}
+
+header {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.49);
+    max-width: 100%;
+    max-height: 3.75em;
+    position: fixed;
+    z-index: 9999;
+    /* opacity: .8; */
+}
+
+.animateComponent {
+    position: relative;
+}
+
+.animateComponent>* {
+    display: block;
+}
+
+.contact {
+    background-color: rgb(129, 130, 129);
+    background-color: black;
+    width: 25%;
+    margin-top: .44rem;
+    margin-left: 75%;
+    display: inline-block;
+    /* border: 1px solid white; */
+}
+
+.contact p {
+    padding: 20px;
+    color: white;
+    /* font-family: minerva-modern, sans-serif; */
+    font-family: quasimoda-2, sans-serif;
+    font-style: normal;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-weight: 400;
+}
+
+.contact hr {
+    width: 80%;
+    margin: 20px;
+    margin-left: 10%;
+    border-color: rgb(63, 64, 66);
+}
+
+#contactClose:hover {
+    color: rgb(129, 130, 129);
+}
+
+a {
+    margin: .625em;
+    color: inherit;
+    color: #B9B8B8;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    /* font-family: 'Open Sans', regular italic, sans-serif; */
+    /* font-family: quasimoda-2, sans-serif; */
+    /* font-family: quasimoda, sans-serif; */
+    font-family: minerva-modern, sans-serif;
+    font-family: Copperplate / Copperplate Gothic Light, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+a:hover,
+a:active {
+    color: white;
+    color: #B9B8B8;
+}
+
+.homeTag {
+    display: inline-block;
+    margin-left: 60px;
+    vertical-align: middle;
+}
+
+.homeTag a {
+    font-size: 2rem;
+    /* font-family: minerva-modern, sans-serif; */
+    font-family: quasimoda-2, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    /* font-family: p22-marcel-script-pro, sans-serif; */
+}
+
+.navA {
+    margin: 0px;
+    font-size: 1rem;
+    display: block;
+}
+
+.routeTag,
+#name,
+nav {
+    display: inline-block;
+}
+
+nav {
+    display: inline-block;
+    margin-left: 59%;
+    /* vertical-align: bottom; */
+    margin-top: 1rem;
+}
+
+#linkedin {
+    max-width: 14.4%;
+    vertical-align: middle;
+    margin-left: 7%;
+    margin-right: 5px;
+    /* margin-bottom: .25rem; */
+}
+
+#github {
+    max-width: 15%;
+    vertical-align: middle;
+    margin: 10px;
+    margin-left: 7%;
+    margin-right: 5px;
+    /* margin-bottom: .3125rem; */
+}
+
+#email {
+    max-width: 15.2%;
+    margin: 10px;
+    margin-left: 7%;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 1030px) {
+    nav {
+        margin-left: 52%;
+        vertical-align: bottom;
+        margin-bottom: .4375rem;
+    }
+    header {
+        padding-bottom: 1.5em;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    nav {
+        margin-left: 49%;
+        vertical-align: bottom;
+        margin-bottom: .4375rem;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    nav {
+        margin-left: 47%;
+        vertical-align: bottom;
+        margin-bottom: .4375rem;
+    }
+    .routeTag a {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #linkedin {
+        max-width: 5%;
+        vertical-align: bottom;
+        margin-left: 4%;
+        margin-top: .5rem;
+    }
+    #github {
+        max-width: 5%;
+        vertical-align: bottom;
+        margin-left: .625em;
+        margin-bottom: .3125rem;
+    }
+    #email {
+        max-width: 5%;
+        margin-left: .625em;
+    }
+    nav {
+        margin-left: 10%;
+        vertical-align: bottom;
+        margin-bottom: .4375rem;
+    }
+    .routeTag a {
+        font-size: .7rem;
+    }
+    header {
+        padding-bottom: 1.1em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    nav {
+        margin-left: 2%;
+        vertical-align: bottom;
+        margin-bottom: .4375rem;
+    }
+}
