@@ -1,12 +1,12 @@
-<div class="projectsMain">
+<main>
     <!-- <img src="assets/images/IMG_0843.jpg" alt=""> -->
-    <img src="assets/images/IMG_3222.jpg" alt="">
     <div class="items">
         <!-- <h2>Welcome to my website!</h2>
         <h2>I am</h2> -->
         <h1>Welcome to my website!</h1>
     </div>
-    <div id="whoAmI">
+    <img src="assets/images/IMG_3222.jpg" alt="">
+    <div class="whoAmI">
         <h1>Who Am I?</h1>
     </div>
     <div class="generalDescription">
@@ -14,7 +14,7 @@
             and a desire to continue to learn. I'm also a dedicated volunteer with a passion, and a belief in, helping and understanding others.
         </p>
         <img id="newspaperPic" src="assets/images/yc_hk Newspaper pic.jpg" alt="">
-        <button style="cursor:pointer" [@myAnimationButton]='state' (click)="animate()">What do I do when I'm not coding?</button>
+        <button id="hobbiesButton" style="cursor:pointer" [@myAnimationButton]='state' (click)="animate()">What do I do when I'm not coding?</button>
         <div [@myAnimation]='state' class="hobbies" (click)="animate()">
             <h2 id="otherInterests"> My other passions</h2>
             <h3 style="cursor:pointer" id="close">Close X</h3>
@@ -35,16 +35,16 @@
             own version of it. The enjoyment of playing that game, and the satisfaction of seeing my code actually do what I exepected it to do, (eg. coding my name in BASIC to scroll diagonally across the screen), lead me into Software Development. I
             continue to have that passion and I'm able to express it and find those, "that's cool!" moments, through web design and development.
         </p>
-        <div id="projects">
+        <div class="projects">
             <h1 style="color:rgb(63, 64, 66)">Recent Projects</h1>
             <div class="videoContainer">
                 <div class="videoBikes">
                     <video style="cursor:pointer" id="bikeDemo" loop autoplay><a href="http://www.mybikemarket.net"></a> <source src="assets/videos/Bicycle Marketplace demo.mp4"></video>
                     <h2 style="cursor:pointer"><a href="http://www.mybikemarket.net">Click To Try Me!</a></h2>
                 </div>
-                <p style="cursor:pointer"><a id="clickforDemo" href="http://www.mybikemarket.net">Click for a Demo!</a></p>
+                <p id="bikeClickP" style="cursor:pointer"><a id="clickforDemo" href="http://www.mybikemarket.net">Click for a Demo!</a></p>
             </div>
-            <div id="bikeDemoP">
+            <div class="bikeDemoP">
                 <p id="bikeP">Bicycle Marketplace - Bulletin board type web application that lets users view and post bicycle ads. Secure login and registration with password validation and encryption.</p>
                 <button style="cursor:pointer" (click)="showBikeDetails()" id="bikeDemoButton">More Details</button>
                 <div *ngIf="showbikeDetails" class="bikeDetails" (click)="showBikeDetails()">
@@ -58,9 +58,8 @@
                     </ul>
                 </div>
             </div>
-
             <a href="https://www.amazon.com/hiramk-Heres-a-Fun-Fact/dp/B072MVZJ7G/ref=sr_1_1?s=digital-skills&ie=UTF8&qid=1508476774&sr=1-1&keywords=here%27s+a+fun+fact"><img id="alexaImg" src="assets/images/AlexaSkill.png" alt=""> Try My Alexa Skill!</a>
         </div>
     </div>
     <footer [@footerAnimation]='state'></footer>
-</div>
+</main>

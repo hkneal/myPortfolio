@@ -30,7 +30,7 @@ import { trigger,state,style,transition,animate, keyframes } from '@angular/anim
     ]),
     trigger('slideAnimation', [
       state('large', style({
-        transform: 'translate3d(0, 70%, 0)',
+        transform: 'translate3d(0, 71%, 0)',
       })),
       state('small', style({
         transform: 'translate3d(0, 0, 0)',
