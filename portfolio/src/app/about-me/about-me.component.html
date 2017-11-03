@@ -23,7 +23,7 @@
             <!-- <a style="cursor:pointer"><img (click)="gaming()" id="gamingPic" src="assets/images/IMG_0334.jpg" alt=""></a> -->
             <!-- <a style="cursor:pointer"><video loop autoplay> <source src="/assets/videos/Chess_Play.mp4"></video></a> -->
             <!-- <a style="cursor:pointer"><video (click)="gaming()" loop autoplay> <source src="/assets/videos/Chess_Play_color.mp4"></video></a> -->
-            <a style="cursor:pointer"><video (click)="gaming()" loop autoplay> <source src="/assets/videos/Chess gamplay color low.mp4"></video></a>
+            <a style="cursor:pointer"><video (click)="gaming()" loop autoplay> <source src="/assets/videos/Chess_gamplay_color_low.mp4"></video></a>
             <a style="cursor:pointer"><img (click)="parenting()" id="parentingPic" src="assets/images/IMG_1370.jpg" alt=""></a>
             <a id="carpentry" (click)="carpentry()" style="cursor:pointer">Carpentry</a>
             <a id="gaming" (click)="gaming()" style="cursor:pointer">Gaming</a>
@@ -35,20 +35,41 @@
             own version of it. The enjoyment of playing that game, and the satisfaction of seeing my code actually do what I exepected it to do, (eg. coding my name in BASIC to scroll diagonally across the screen), lead me into Software Development. I
             continue to have that passion and I'm able to express it and find those, "that's cool!" moments, through web design and development.
         </p>
-        <div class="projects">
+        <div class="projects" [ngClass]="{'projectsExpanded': showbikeDetails || showbookDetails}">
             <h1 style="color:rgb(63, 64, 66)">Recent Projects</h1>
             <div class="videoContainer">
-                <div class="videoBikes">
-                    <video style="cursor:pointer" id="bikeDemo" loop autoplay><a href="http://www.mybikemarket.net"></a> <source src="assets/videos/Bicycle Marketplace demo.mp4"></video>
+                <div class="videoDiv">
+                    <video style="cursor:pointer" class="videoDemo" loop autoplay><a href="http://www.hnbookreviews.com"></a> <source src="assets/videos/hnBookReview.mp4"></video>
+                    <h2 style="cursor:pointer"><a href="http://www.hnbookreviews.com">Click To Try Me!</a></h2>
+                </div>
+                <p class="videoClickP" style="cursor:pointer"><a class="clickforDemo" href="http://www.hnbookreviews.com">Click for a Demo!</a></p>
+            </div>
+            <div class="projectDiv">
+                <p class="projectDesc">HnBookReviews - The ideal web application site for reading and sharing book reviews of your favorite books. Secure login and registration with password validation and encryption.</p>
+                <button style="cursor:pointer" (click)="showBookDetails()" class="projectButton">More Details</button>
+                <div *ngIf="showbookDetails" class="projectDetails" (click)="showBookDetails()">
+                    <h3 style="cursor:pointer" class="closeDetails">Close X</h3>
+                    <p sytle="color:white">Created with Django Python web framework and incorporates form and model validation, password encyrption, session and cookie manipulation, and DB many-to-many and foreign key releationships. Built using:</p>
+                    <ul>
+                        <li>Django 1.1.0</li>
+                        <li>Python 2.7.13</li>
+                        <li>MySQL 5.7.20</li>
+                        <li>Bcrypt 3.1.3</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="videoContainer">
+                <div class="videoDiv">
+                    <video style="cursor:pointer" class="videoDemo" loop autoplay><a href="http://www.mybikemarket.net"></a> <source src="assets/videos/Bicycle Marketplace demo.mp4"></video>
                     <h2 style="cursor:pointer"><a href="http://www.mybikemarket.net">Click To Try Me!</a></h2>
                 </div>
-                <p id="bikeClickP" style="cursor:pointer"><a id="clickforDemo" href="http://www.mybikemarket.net">Click for a Demo!</a></p>
+                <p class="videoClickP" style="cursor:pointer"><a class="clickforDemo" href="http://www.mybikemarket.net">Click for a Demo!</a></p>
             </div>
-            <div class="bikeDemoP">
-                <p id="bikeP">Bicycle Marketplace - Bulletin board type web application that lets users view and post bicycle ads. Secure login and registration with password validation and encryption.</p>
-                <button style="cursor:pointer" (click)="showBikeDetails()" id="bikeDemoButton">More Details</button>
-                <div *ngIf="showbikeDetails" class="bikeDetails" (click)="showBikeDetails()">
-                    <h3 style="cursor:pointer" id="closeBike">Close X</h3>
+            <div class="projectDiv">
+                <p class="projectDesc">Bicycle Marketplace - Bulletin board type web application that lets users view and post bicycle ads. Secure login and registration with password validation and encryption.</p>
+                <button style="cursor:pointer" (click)="showBikeDetails()" class="projectButton">More Details</button>
+                <div *ngIf="showbikeDetails" class="projectDetails" (click)="showBikeDetails()">
+                    <h3 style="cursor:pointer" class="closeDetails">Close X</h3>
                     <p sytle="color:white">This application incorporates image download, form validation, password encyrption, session and cookie manipulation, and advanced search funcionalities. Built using:</p>
                     <ul>
                         <li>Angular 4.4.6</li>
@@ -58,8 +79,8 @@
                     </ul>
                 </div>
             </div>
-            <a href="https://www.amazon.com/hiramk-Heres-a-Fun-Fact/dp/B072MVZJ7G/ref=sr_1_1?s=digital-skills&ie=UTF8&qid=1508476774&sr=1-1&keywords=here%27s+a+fun+fact"><img id="alexaImg" src="assets/images/AlexaSkill.png" alt=""> Try My Alexa Skill!</a>
+            <a id="alexaTry" href="https://www.amazon.com/hiramk-Heres-a-Fun-Fact/dp/B072MVZJ7G/ref=sr_1_1?s=digital-skills&ie=UTF8&qid=1508476774&sr=1-1&keywords=here%27s+a+fun+fact"><img id="alexaImg" src="assets/images/AlexaSkill.png" alt=""> Try My Alexa Skill!</a>
         </div>
     </div>
-    <footer [@footerAnimation]='state'></footer>
+    <footer [ngClass]="{'footerExpanded': showbikeDetails || showbookDetails}" [@footerAnimation]='state'></footer>
 </main>

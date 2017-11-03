@@ -85,7 +85,7 @@ a:active {
 
 .homeTag {
     display: inline-block;
-    margin-left: 60px;
+    margin-left: 3.75em;
     vertical-align: middle;
 }
 
@@ -143,12 +143,24 @@ nav {
 
 @media screen and (max-width: 1030px) {
     nav {
-        margin-left: 52%;
+        margin-left: 32%;
         vertical-align: bottom;
         margin-bottom: .4375rem;
     }
-    header {
-        padding-bottom: 1.5em;
+    .homeTag {
+        margin-left: .625em;
+    }
+    .contact {
+        width: 65%;
+        margin-left: 35%;
+    }
+    .contact p {
+        padding: .625em;
+    }
+    #linkedin,
+    #github,
+    #email {
+        max-width: 7.4%;
     }
 }
 
@@ -191,13 +203,23 @@ nav {
     nav {
         margin-left: 10%;
         vertical-align: bottom;
-        margin-bottom: .4375rem;
+        margin-bottom: .5375rem;
     }
     .routeTag a {
         font-size: .7rem;
     }
     header {
-        padding-bottom: 1.1em;
+        padding-bottom: 0em;
+    }
+    .homeTag {
+        margin-left: 10px;
+    }
+    .homeTag a {
+        font-size: 1.5rem;
+    }
+    .contact {
+        width: 65%;
+        margin-left: 35%;
     }
 }
 

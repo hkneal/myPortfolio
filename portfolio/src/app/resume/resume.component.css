@@ -8,14 +8,8 @@
     width: 16%;
     height: 100%;
     background-color: rgb(57, 54, 54);
-    /* background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(63, 64, 66)), to(rgb(126, 130, 134)));
-    background-image: -webkit-linear-gradient(top, rgb(63, 64, 66), rgb(126, 130, 134));
-    background-image: -moz-linear-gradient(top, rgb(63, 64, 66), rgb(126, 130, 134));
-    background-image: linear-gradient(to bottom, rgb(63, 64, 66), rgb(126, 130, 134)); */
-    /* background-color: black; */
     display: inline-block;
-    /* position: absolute; */
-    padding: 10px;
+    padding: .625em;
     padding-bottom: 15%;
 }
 
@@ -23,7 +17,7 @@
     background-color: white;
     width: 80%;
     border: 2px solid lightgrey;
-    padding: 10px;
+    padding: .625em;
     padding-right: 0px;
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgb(35, 38, 41);
@@ -144,9 +138,9 @@ h3 {
 
 img {
     width: 90%;
-    margin: 10px;
-    margin-left: 12px;
-    margin-top: 2px;
+    margin: .625em;
+    margin-left: .75em;
+    margin-top: .125em;
 }
 
 .profile {
@@ -303,4 +297,13 @@ ul {
 #downloadA:hover {
     font-weight: bold;
     color: rgb(140, 181, 225);
+}
+
+@media screen and (max-width: 480px) {
+    .sidebar img {
+        margin-left: .25em;
+    }
+    .sidebar h3 {
+        font-size: .7rem;
+    }
 }

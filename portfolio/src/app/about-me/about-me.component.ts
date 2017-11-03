@@ -53,6 +53,7 @@ import { trigger,state,style,transition,animate, keyframes } from '@angular/anim
 export class AboutMeComponent implements OnInit {
   state: string = 'small';
   showbikeDetails: boolean = false;
+  showbookDetails: boolean = false;
 
   constructor(private _router: Router) { }
 
@@ -84,5 +85,8 @@ export class AboutMeComponent implements OnInit {
 
   showBikeDetails():void{
     this.showbikeDetails = this.showbikeDetails ? false : true;
+  }
+  showBookDetails():void{
+    this.showbookDetails = this.showbookDetails ? false : true;
   }
 }

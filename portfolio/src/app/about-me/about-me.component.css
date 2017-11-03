@@ -96,7 +96,11 @@ footer {
     background-color: black;
     height: 3.75em;
     max-width: 100%;
-    margin-top: calc(56% - 3.75em);
+    margin-top: calc(64% - 3.75em);
+}
+
+.footerExpanded {
+    margin-top: calc(87% - 3.75em);
 }
 
 ul {
@@ -116,13 +120,15 @@ li {
 }
 
 .whoAmI {
+    display: block;
+    margin: auto;
     margin-top: 3rem;
 }
 
 .items {
     color: white;
     width: 60%;
-    margin-left: 20%;
+    margin: auto;
     margin-top: 6rem;
     background-color: black;
 }
@@ -178,13 +184,17 @@ li {
 }
 
 .projects {
-    margin-top: 80px;
+    margin-top: 5%;
     background-color: gainsboro;
-    height: 900px;
-    padding-top: 20px;
+    height: 64em;
+    padding-top: 1.25em;
 }
 
-.bikeDetails {
+.projectsExpanded {
+    height: 1350px;
+}
+
+.projectDetails {
     margin-top: 3%;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(183, 183, 183)), to(rgb(33, 34, 43)));
     background-image: -webkit-linear-gradient(top, rgb(183, 183, 183), rgb(33, 34, 43));
@@ -197,24 +207,24 @@ li {
     padding: 10px;
 }
 
-.bikeDetails p {
+.projectDetails p {
     color: white;
     text-align: left;
     margin-bottom: 10px;
 }
 
-.bikeDemoP {
+.projectDiv {
     display: inline-block;
     vertical-align: top;
     margin: 20px;
     margin-left: 0px;
-    margin-top: 77px;
+    margin-top: 42px;
     width: 50%;
     text-align: left;
 }
 
 .videoContainer video {
-    max-width: 350px;
+    max-width: 21.875em;
 }
 
 .videoContainer {
@@ -227,12 +237,12 @@ li {
     color: white;
 }
 
-.videoBikes {
+.videoDiv {
     position: relative;
     transition: .3s;
 }
 
-.videoBikes :not(video) {
+.videoDiv :not(video) {
     position: absolute;
     top: 40%;
     z-index: 1;
@@ -242,7 +252,7 @@ li {
     transition: .3s;
 }
 
-.videoBikes a {
+.videoDiv a {
     position: absolute;
     color: white;
     text-decoration: none;
@@ -253,11 +263,11 @@ li {
     margin-left: -180px;
 }
 
-.videoBikes:hover video {
+.videoDiv:hover video {
     filter: blur(2px) brightness(60%);
 }
 
-.videoBikes:hover :not(video) {
+.videoDiv:hover :not(video) {
     opacity: 1;
 }
 
@@ -356,7 +366,7 @@ li {
 }
 
 #close:hover,
-#closeBike:hover {
+.closeDetails:hover {
     color: rgb(129, 130, 129);
 }
 
@@ -365,14 +375,14 @@ li {
     margin-left: 39%;
 }
 
-#bikeP {
+.projectDesc {
     display: inline-block;
     vertical-align: top;
     margin: 20px;
     text-align: left;
 }
 
-#bikeDemoButton {
+.projectButton {
     display: inline-block;
     margin-top: 0px;
     padding: .5rem;
@@ -380,18 +390,18 @@ li {
     margin-left: calc(50% - 100px);
 }
 
-#clickforDemo {
+.clickforDemo {
     color: black;
     text-decoration: none;
     font-style: normal;
     font-size: 1.5rem;
 }
 
-#clickforDemo:hover {
+.clickforDemo:hover {
     color: white;
 }
 
-#closeBike {
+.closeDetails {
     display: inline-block;
     margin-top: 1%;
     margin-left: 90%;
@@ -403,15 +413,26 @@ li {
     color: white;
 }
 
+@media screen {
+    .closeDetails {
+        margin-left: 80%;
+    }
+}
+
 @media screen and (max-width: 1030px) {
     h2 {
         font-size: 1.5rem;
     }
     h1 {
-        font-size: 4.375rem;
+        font-size: 2.375rem;
+    }
+    .whoAmI {
+        margin-top: 2rem;
     }
     p {
         font-size: 1rem;
+        margin: 2rem;
+        margin-top: .25rem;
     }
     button {
         max-width: 10.625rem;
@@ -419,11 +440,53 @@ li {
         margin-left: 36%;
     }
     .generalDescription {
+        margin: auto;
         max-width: 93%;
         padding-top: 1rem;
+        height: 25.9375rem;
+    }
+    .videoContainer {
+        margin: 0;
+        margin-left: 1rem;
+        margin-top: 2.5rem;
+    }
+    .videoContainer video {
+        max-width: 19.875rem;
+    }
+    .hobbies {
+        max-width: 73%;
+    }
+    .hobbies video {
+        max-width: 12.375rem;
     }
     footer {
         margin-top: 109%;
+    }
+    .footerExpanded {
+        margin-top: 153%;
+    }
+    #otherInterests {
+        margin-left: 31%;
+    }
+    #close {
+        margin-left: 15%;
+    }
+    #building {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    #parentingPic {
+        margin: 0;
+        margin-left: 3%;
+    }
+    #carpentry {
+        margin-left: 2.625rem;
+    }
+    #gaming {
+        margin-left: 6.5rem;
+    }
+    #parenting {
+        margin-left: 6.4rem;
     }
 }
 
@@ -450,30 +513,59 @@ li {
 }
 
 @media screen and (max-width: 480px) {
+    p {
+        font-size: .7rem;
+        margin: 1rem;
+        margin-top: 0;
+    }
     .items {
-        max-width: 25.9rem;
-        margin-top: 1rem;
+        margin: auto;
+        width: 19.5rem;
+        margin-top: 4.5rem;
     }
     img {
-        max-width: 25.9rem;
+        max-width: 19.5rem;
+    }
+    .whoAmI {
+        margin-top: 1rem;
     }
     .generalDescription {
         max-width: 93%;
-        padding: 2.5rem;
+        padding: 1rem;
+        height: 17.1875rem;
+    }
+    .alexa {
+        height: 10.5rem;
     }
     h2 {
         font-size: 1rem;
     }
     h1 {
-        font-size: 2.375rem;
+        font-size: 1.4rem;
     }
     button {
         max-width: 7.625rem;
         font-size: .7rem;
         margin-top: 1.5rem;
     }
+    ul {
+        margin-left: 5%
+    }
+    li {
+        font-size: .7rem;
+    }
     footer {
-        margin-top: 307%;
+        margin-top: 113%;
+    }
+    .footerExpanded {
+        margin-top: 205%;
+    }
+    .hobbies {
+        max-width: 80%;
+    }
+    .hobbies video {
+        max-width: 121px;
+        margin-left: 3%;
     }
     .videoContainer {
         max-width: 32%;
@@ -481,40 +573,92 @@ li {
         margin-left: 4%;
         margin-right: 1%;
     }
-    #bikeDemo {
-        max-width: 100%;
+    .videoContainer video {
+        max-width: 8.5em;
     }
-    #bikeDemoP {
+    .videoDiv a {
+        font-size: .7rem;
+        margin-left: -3.9375rem;
+    }
+    .projects {
+        height: 32em;
+        /* //47em */
+    }
+    .projectsExpanded {
+        height: 56em;
+        /* //70em */
+    }
+    .projectDiv {
         margin-top: 5%;
         margin-left: 2%;
-        width: 53%;
+        width: 55%;
     }
-    #bikeP {
+    .projectDesc {
         font-size: .7rem;
         margin: 0;
+    }
+    .projectDetails {
+        padding: 1px;
     }
     #projects h1 {
         font-size: 1.5rem;
     }
-    #bikeDemoButton {
+    .projectButton {
         margin-top: 2%;
         padding: .3rem;
         font-size: .5rem;
     }
-    #bikeClickP {
+    .projectDetails p {
+        margin: .5rem;
+    }
+    .videoClickP {
         margin: 0;
     }
-    #clickforDemo {
+    .clickforDemo {
         font-size: .7rem;
+    }
+    .closeDetails {
+        font-size: .7rem;
+    }
+    #otherInterests {
+        margin-left: 29%
+    }
+    #close {
+        font-size: .7rem;
+        margin-left: 10%;
     }
     #projects {
         margin-top: 6%;
     }
     #alexaDescription {
-        margin: 2.5rem;
+        margin: 1.5rem;
     }
-    #alexaDescription a {
+    #alexaDescription a,
+    #alexaTry {
         font-size: .7rem;
+    }
+    #alexaImg {
+        margin-top: .5rem;
+    }
+    #building,
+    #parentingPic {
+        margin: 0px;
+        margin-left: 2.5%;
+    }
+    #carpentry,
+    #gaming,
+    #parenting {
+        font-size: .7rem;
+        margin: 5px;
+    }
+    #carpentry {
+        margin-left: 1rem;
+    }
+    #gaming {
+        margin-left: 3.5rem;
+    }
+    #parenting {
+        margin-left: 4rem;
     }
 }
 
