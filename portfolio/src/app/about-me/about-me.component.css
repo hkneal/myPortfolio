@@ -94,13 +94,13 @@ a:hover {
 
 footer {
     background-color: black;
-    height: 3.75em;
+    height: 2.75em;
     max-width: 100%;
-    margin-top: calc(64% - 3.75em);
+    margin-top: calc(64% - 2.75em);
 }
 
 .footerExpanded {
-    margin-top: calc(87% - 3.75em);
+    margin-top: calc(87% - 2.75em);
 }
 
 ul {
@@ -186,7 +186,7 @@ li {
 .projects {
     margin-top: 5%;
     background-color: gainsboro;
-    height: 64em;
+    height: 65em;
     padding-top: 1.25em;
 }
 
@@ -224,20 +224,21 @@ li {
 }
 
 .videoContainer video {
-    max-width: 21.875em;
+    max-width: 100%;
 }
 
 .videoContainer {
-    margin: 40px;
-    margin-top: 60px;
-    margin-left: 120px;
-    max-width: 400px;
+    margin: 1%;
+    margin-top: 4%;
+    margin-left: 8%;
+    max-width: 24%;
     margin-bottom: 0px;
     display: inline-block;
     color: white;
 }
 
 .videoDiv {
+    max-width: 100%;
     position: relative;
     transition: .3s;
 }
@@ -387,7 +388,7 @@ li {
     margin-top: 0px;
     padding: .5rem;
     font-size: 1rem;
-    margin-left: calc(50% - 100px);
+    margin-left: calc(37% - 100px);
 }
 
 .clickforDemo {
@@ -447,11 +448,9 @@ li {
     }
     .videoContainer {
         margin: 0;
-        margin-left: 1rem;
-        margin-top: 2.5rem;
-    }
-    .videoContainer video {
-        max-width: 19.875rem;
+        margin-left: 2%;
+        margin-top: 8%;
+        max-width: 44%
     }
     .hobbies {
         max-width: 73%;
@@ -460,10 +459,16 @@ li {
         max-width: 12.375rem;
     }
     footer {
-        margin-top: 109%;
+        margin-top: 90%;
     }
     .footerExpanded {
-        margin-top: 153%;
+        margin-top: 128%
+    }
+    .projects {
+        height: 55em;
+    }
+    .projectsExpanded {
+        height: 68.25em;
     }
     #otherInterests {
         margin-left: 31%;
@@ -490,17 +495,100 @@ li {
     }
 }
 
+@media screen and (aspect-ratio: 1024/1366) {
+    .projects {
+        height: 71em;
+    }
+    .projectsExpanded {
+        height: 72em;
+    }
+    .footerExpanded {
+        margin-top: 91%;
+    }
+    .hobbies video {
+        max-width: 17.375rem;
+    }
+    #carpentry {
+        margin-left: 4.625rem;
+    }
+    #gaming,
+    #parenting {
+        margin-left: 10.5rem;
+    }
+    #otherInterests {
+        margin-left: 37%;
+    }
+}
+
+@media screen and (aspect-ratio: 1366/1024) {
+    .hobbies video {
+        max-width: 20.7rem;
+    }
+    .videoContainer {
+        margin-left: 2%;
+        max-width: 45%;
+    }
+    .projects {
+        height: 83em;
+    }
+    .projectsExpanded {
+        height: 87em;
+    }
+    footer {
+        margin-top: 82%;
+    }
+    .footerExpanded {
+        margin-top: 87%;
+    }
+    #gaming {
+        margin-left: 13.9375rem;
+    }
+    #parenting {
+        margin-left: 13.75rem;
+    }
+}
+
+@media screen and (aspect-ratio: 1024/768) {
+    .projects {
+        height: 71em;
+    }
+    .footerExpanded {
+        margin-top: 90%;
+    }
+}
+
+@media screen and (aspect-ratio: 768/1024) {
+    .projectsExpanded {
+        height: 78.25rem;
+    }
+    .footerExpanded {
+        margin-top: 134%;
+    }
+}
+
+@media screen and (aspect-ratio: 736/414) {
+    .footerExpanded {
+        margin-top: 144%;
+    }
+    .projects {
+        height: 55.25em;
+    }
+    .projectsExpanded {
+        height: 79.25em;
+    }
+    /* footer {
+        margin-top: 90%;
+    } */
+}
+
 @media screen and (max-width: 720px) {}
 
 @media screen and (max-width: 667px) {
-    .items {
-        margin-top: 2rem;
-    }
     h2 {
         font-size: 1.5rem;
     }
     h1 {
-        font-size: 4.375rem;
+        font-size: 2.75rem;
     }
     p {
         font-size: .7rem;
@@ -509,6 +597,22 @@ li {
         max-width: 10.625rem;
         font-size: 1rem;
         margin-left: 33%;
+    }
+    img {
+        max-width: 75%;
+    }
+    .items {
+        margin-top: 10%;
+        width: 75%;
+    }
+    .contact {
+        margin-top: 0;
+    }
+    .hobbies {
+        max-width: 80%;
+    }
+    .generalDescription {
+        height: 22rem;
     }
 }
 
@@ -558,7 +662,7 @@ li {
         margin-top: 113%;
     }
     .footerExpanded {
-        margin-top: 205%;
+        margin-top: 195%;
     }
     .hobbies {
         max-width: 80%;
@@ -569,24 +673,14 @@ li {
     }
     .videoContainer {
         max-width: 32%;
-        margin-top: 5%;
+        margin-top: 6%;
         margin-left: 4%;
-        margin-right: 1%;
-    }
-    .videoContainer video {
-        max-width: 8.5em;
-    }
-    .videoDiv a {
-        font-size: .7rem;
-        margin-left: -3.9375rem;
     }
     .projects {
-        height: 32em;
-        /* //47em */
+        height: 29em;
     }
     .projectsExpanded {
-        height: 56em;
-        /* //70em */
+        height: 51em;
     }
     .projectDiv {
         margin-top: 5%;
@@ -605,7 +699,8 @@ li {
     }
     .projectButton {
         margin-top: 2%;
-        padding: .3rem;
+        margin-left: 0;
+        padding: 1%;
         font-size: .5rem;
     }
     .projectDetails p {
@@ -663,21 +758,173 @@ li {
 }
 
 @media screen and (max-width: 378px) {
+    h2 {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 1.7rem;
+    }
     .items {
         max-width: 23.5rem;
-        margin-top: 1rem;
+        margin-top: 4.5rem;
     }
-    img {
-        max-width: 23.5rem;
+    .hobbies video {
+        max-width: 110px;
     }
     .generalDescription {
         max-width: 22.6rem;
         padding: 1rem;
     }
-    h2 {
-        font-size: 1rem;
+    footer {
+        margin-top: 130%;
+    }
+    .footerExpanded {
+        margin-top: 225%;
+    }
+    #otherInterests {
+        margin-left: 27%;
+    }
+    #close {
+        margin-left: 6%;
+    }
+    #gaming {
+        margin-left: 2.5rem;
+    }
+    #parenting {
+        margin-left: 20%;
+    }
+}
+
+@media screen and (aspect-ratio: 320/568) {
+    img {
+        max-width: 70%;
     }
     h1 {
-        font-size: 2.375rem;
+        font-size: 1rem;
+    }
+    p {
+        margin: 1rem;
+        margin-top: .5rem;
+    }
+    .items {
+        display: block;
+        margin: auto;
+        margin-top: 13%;
+        width: 70%;
+    }
+    .hobbies {
+        max-width: 82%;
+        margin-top: -40px;
+    }
+    .hobbies video {
+        max-width: 91px;
+    }
+    #otherInterests {
+        margin-left: 14%;
+    }
+    #newspaperPic {
+        width: 25%;
+    }
+    #hobbiesButton {
+        margin-top: 1.2rem;
+        padding: .25rem;
+    }
+    #carpentry {
+        margin-left: .7rem;
+    }
+    #gaming {
+        margin-left: 2rem;
+    }
+    #parenting {
+        margin-left: 13%;
+    }
+    .videoContainer {
+        display: block;
+        margin: auto;
+        margin-top: 5%;
+        max-width: 65%;
+    }
+    .projectDiv {
+        margin: auto;
+        display: block;
+        margin-top: 2%;
+        width: 65%;
+    }
+    .projectDiv button {
+        margin: auto;
+        margin-top: 1%;
+        display: block;
+    }
+    .projects {
+        height: 41em;
+    }
+    .projectsExpanded {
+        height: 68em;
+    }
+    footer {
+        margin-top: 206%;
+    }
+    .footerExpanded {
+        margin-top: 342%;
+    }
+}
+
+@media screen and (aspect-ratio: 568/320) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .hobbies video {
+        max-width: 10.4rem;
+    }
+    #otherInterests {
+        margin-left: 23%;
+    }
+    #building {
+        margin-right: .5rem;
+    }
+    #parentingPic {
+        margin-left: 2%;
+    }
+    #carpentry {
+        margin-left: 2rem;
+    }
+    #gaming {
+        margin-left: 4.5rem;
+    }
+    #parenting {
+        margin-left: 4.4rem;
+    }
+    .videoContainer {
+        display: block;
+        margin: auto;
+        margin-top: 5%;
+        max-width: 55%;
+    }
+    .projectDiv {
+        display: block;
+        margin: auto;
+        margin-top: 0;
+        width: 65%;
+    }
+    .projectDiv p {
+        margin: 0;
+        font-size: 1rem;
+    }
+    .projectDiv button {
+        margin: auto;
+        margin-top: 1%;
+        display: block;
+    }
+    .projects {
+        height: 65em;
+    }
+    .projectsExpanded {
+        height: 96em;
+    }
+    footer {
+        margin-top: 137%;
+    }
+    .footerExpanded {
+        margin-top: 224%;
     }
 }
