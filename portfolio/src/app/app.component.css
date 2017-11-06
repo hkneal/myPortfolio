@@ -1,7 +1,5 @@
 main {
     background-color: white;
-    /* max-height: 100%;
-    max-width: 100%; */
 }
 
 .background {
@@ -18,7 +16,6 @@ header {
     max-height: 8%;
     position: fixed;
     z-index: 9999;
-    /* opacity: .8; */
 }
 
 .animateComponent {
@@ -35,11 +32,10 @@ header {
     width: 25%;
     margin-left: 75%;
     display: inline-block;
-    /* border: 1px solid white; */
 }
 
 .contact p {
-    padding: 20px;
+    padding: 5%;
     color: white;
     /* font-family: minerva-modern, sans-serif; */
     font-family: quasimoda-2, sans-serif;
@@ -147,9 +143,6 @@ nav {
     header {
         max-height: 13%;
     }
-    .background {
-        height: 13%;
-    }
     .homeTag {
         margin-left: .625em;
     }
@@ -181,6 +174,53 @@ nav {
         margin-left: 4%;
         margin-top: 1%;
     }
+    .contact {
+        max-width: 40%;
+        margin-left: 60%;
+        margin-top: 2.3%;
+    }
+}
+
+@media screen and (aspect-ratio: 2560/1600) {
+    a {
+        font-size: 2rem;
+    }
+    header {
+        width: 100%;
+    }
+}
+
+@media screen and (aspect-ratio: 1600/2560) {
+    a {
+        font-size: 1.5rem;
+    }
+    .background {
+        height: 4%;
+    }
+    header {
+        max-height: 4%;
+        width: 100%;
+    }
+    nav {
+        margin-left: 57%;
+        margin-top: 2.2%
+    }
+    .homeTag {
+        margin-left: 4%;
+        margin-top: 1%;
+        font-size: 2rem;
+    }
+    .contact {
+        width: 40%;
+        margin-left: 60%;
+        margin-top: .9%;
+    }
+    .contact p {
+        font-size: 1.5rem;
+    }
+    .navA {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (aspect-ratio: 1366/1024) {
@@ -201,8 +241,14 @@ nav {
         height: 8%
     }
     .contact {
-        width: 45%;
+        max-width: 45%;
         margin-left: 55%;
+    }
+}
+
+@media screen and (aspect-ratio: 736/414) {
+    .background {
+        height: 13%;
     }
 }
 
@@ -218,7 +264,7 @@ nav {
         height: 6%
     }
     .contact {
-        width: 45%;
+        max-width: 45%;
         margin-left: 55%;
     }
 }
@@ -241,6 +287,15 @@ nav {
     }
     .contact hr {
         margin: 3%;
+    }
+    .background {
+        height: 13%;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    nav {
+        margin-left: 32%;
     }
 }
 
@@ -285,8 +340,23 @@ nav {
         font-size: 1.5rem;
     }
     .contact {
-        width: 65%;
+        max-width: 65%;
         margin-left: 35%;
+    }
+}
+
+@media screen and (aspect-ratio: 736/414) {
+    .contact hr {
+        margin: 3%;
+    }
+}
+
+@media screen and (aspect-ratio: 414/736) {
+    .contact {
+        margin-top: 1%;
+    }
+    nav {
+        margin-left: 24%;
     }
 }
 
@@ -299,10 +369,25 @@ nav {
     .navA {
         font-size: .9rem;
     }
+    .contact {
+        max-width: 63%;
+        margin-left: 37%;
+        margin-top: 0px;
+    }
     #linkedin,
     #github,
     #email {
         max-width: 8%;
+    }
+}
+
+@media screen and (aspect-ratio: 360/640) {
+    .homeTag a {
+        font-size: 1rem;
+    }
+    .contact {
+        max-width: 65%;
+        margin-left: 35%;
     }
 }
 

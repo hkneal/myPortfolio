@@ -23,6 +23,9 @@ import { trigger,state,style,transition,animate } from '@angular/animations';
       state('hiddenOut', style({
         transform: 'scale(0)',
       })),
+      state('visable', style({
+        transform: 'scale(0)',
+      })),
 
       transition('hiddenIn <=> hiddenOut', animate('400ms ease-in-out')),
     ]),

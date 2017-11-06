@@ -14,8 +14,8 @@
             and a desire to continue to learn. I'm also a dedicated volunteer with a passion, and a belief in, helping and understanding others.
         </p>
         <img id="newspaperPic" src="assets/images/yc_hk Newspaper pic.jpg" alt="">
-        <button id="hobbiesButton" style="cursor:pointer" [@myAnimationButton]='state' (click)="animate()">What do I do when I'm not coding?</button>
-        <div [@myAnimation]='state' class="hobbies" (click)="animate()">
+        <button *ngIf="!showhobbies" id="hobbiesButton" style="cursor:pointer" (click)="showHobbies()">What do I do when I'm not coding?</button>
+        <div *ngIf="showhobbies" class="hobbies" (click)="showHobbies()">
             <h2 id="otherInterests"> My other passions</h2>
             <h3 style="cursor:pointer" id="close">Close X</h3>
             <p>click to explore further</p>

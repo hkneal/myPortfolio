@@ -54,6 +54,7 @@ export class AboutMeComponent implements OnInit {
   state: string = 'small';
   showbikeDetails: boolean = false;
   showbookDetails: boolean = false;
+  showhobbies: boolean = false;
 
   constructor(private _router: Router) { }
 
@@ -88,5 +89,8 @@ export class AboutMeComponent implements OnInit {
   }
   showBookDetails():void{
     this.showbookDetails = this.showbookDetails ? false : true;
+  }
+  showHobbies():void{
+    this.showhobbies = this.showhobbies ? false : true;
   }
 }

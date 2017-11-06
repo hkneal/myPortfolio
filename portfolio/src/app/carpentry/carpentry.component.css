@@ -2,7 +2,7 @@ footer {
     background-color: black;
     height: 3.75em;
     width: 100%;
-    margin-top: calc(14% - 3.75em);
+    margin-top: 10.5%;
     position: absolute;
 }
 
@@ -10,9 +10,10 @@ footer {
     width: 100%;
     height: 100%;
     background-image: url("/assets/images/Fotosearch_k17405522.jpg");
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: fixed;
-    margin-top: 3.75rem;
+    margin-top: 4.1%;
 }
 
 .vertical-Line {
@@ -63,8 +64,8 @@ footer {
 
 .pictureViewer {
     position: absolute;
-    margin: 70px;
-    margin-top: 80px;
+    margin: 5%;
+    margin-top: 6%;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(194, 200, 208)), to(rgb(63, 64, 66)));
     background-image: -webkit-linear-gradient(top, rgb(194, 200, 208), rgb(63, 64, 66));
     background-image: -moz-linear-gradient(top, rgb(194, 200, 208), rgb(63, 64, 66));
@@ -72,9 +73,9 @@ footer {
     border: 5px solid rgb(253, 254, 255);
     box-shadow: 5px 5px 10px black;
     border-radius: 50px;
-    padding: 40px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     text-align: center;
 }
 
@@ -90,8 +91,8 @@ footer {
 }
 
 img {
-    margin: 10px;
-    width: 218px;
+    margin: .75%;
+    max-width: 18%;
     max-height: 200px;
     display: inline-block;
     /* border: 5px solid white; */
@@ -107,14 +108,14 @@ img {
     background-image: linear-gradient(to bottom, rgb(183, 183, 183), rgb(33, 34, 43));
     /* position: absolute; */
     max-width: 50%;
-    margin-left: 25%;
-    margin-top: 10rem;
+    margin: auto;
+    margin-top: 11%;
     z-index: 9999;
     border-radius: 50px;
     border: 2px solid rgb(253, 254, 255);
     box-shadow: 5px 5px 10px black;
     /* border: 2px solid rgb(177, 174, 174); */
-    padding: 10px;
+    padding: 1%;
     /* text-align: center; */
 }
 
@@ -130,19 +131,27 @@ img {
     color: rgb(252, 249, 249);
 }
 
+#gaming,
+#parenting {
+    display: inline-block;
+    margin: 1%;
+    margin-top: 0px;
+    margin-left: 50px;
+}
+
 #home,
 #gamingPic,
 #parentingPic {
-    margin: 20px;
-    margin-left: 10px;
+    margin: 3%;
+    margin-left: 1%;
     margin-bottom: 0px;
     border-radius: 10px;
 }
 
 #home {
-    width: 213px;
+    max-width: 29%;
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 4%;
 }
 
 #gamingPic {
@@ -155,36 +164,21 @@ img {
     margin-left: 1%;
 }
 
-#gaming,
-#parenting {
-    display: inline-block;
-    margin: 10px;
-    margin-top: 0px;
-    margin-left: 50px;
-}
-
 #gaming {
-    margin-left: 190px;
+    margin-left: 27%;
     position: inherit;
 }
 
 #parenting {
-    margin-left: 140px;
-}
-
-#activities {
-    vertical-align: middle;
-    max-width: 22%;
-    margin-right: 10px;
-    position: inherit;
+    margin-left: 18%;
 }
 
 #homeTag {
-    margin-left: 110px;
+    margin-left: 15%;
 }
 
 #entertainmentP {
-    margin: 5px;
+    margin: 1%;
     margin-bottom: 0;
 }
 
@@ -212,17 +206,6 @@ a:hover {
     margin-top: 47%;
 }
 
-#newspaperPic {
-    width: 20%;
-    position: inherit;
-    margin: 10px;
-    /* margin-top: 167px; */
-    margin-left: 40%;
-    vertical-align: middle;
-    border: 1px solid lightgrey;
-    border-radius: 15px;
-}
-
 h2 {
     text-align: center;
     font-family: quasimoda-2, sans-serif;
@@ -243,4 +226,81 @@ h2 {
     font-style: normal;
     font-size: 1rem;
     font-weight: 400;
+}
+
+@media screen and (aspect-ratio: 736/414) {
+    img {
+        max-width: 17%;
+    }
+    footer {
+        margin-top: 2.5%;
+    }
+    .treehouseMain {
+        margin-top: 7.4%;
+    }
+    .hobbies {
+        max-width: 87%;
+        margin-top: 5%;
+    }
+    .pictureViewer {
+        margin-top: 5%;
+    }
+    .treehouse h1 {
+        font-size: 1rem;
+    }
+    .vertical-Line {
+        height: .9em;
+    }
+    #close {
+        margin-left: 21%;
+    }
+    .pictureViewer p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (aspect-ratio: 414/736) {
+    img {
+        max-width: 31%;
+    }
+    footer {
+        margin-top: 68.5%;
+    }
+    .treehouseMain {
+        margin-top: 10.7%;
+    }
+    .treehouse h1 {
+        font-size: .5rem;
+    }
+    .vertical-Line {
+        height: .7em;
+    }
+    .pictureViewer {
+        margin-top: 10%;
+        padding-top: 4%;
+    }
+    .pictureViewer p {
+        font-size: 1rem;
+    }
+    .hobbies {
+        margin-top: 36%;
+        max-width: 87%;
+    }
+    #treehouseH1 {
+        margin-left: 3%;
+    }
+    #otherInterests {
+        margin-left: 25%;
+    }
+    #close {
+        margin-left: 3%;
+        font-size: .7rem;
+    }
+    #homeTag,
+    #parenting {
+        margin-left: 13%;
+    }
+    #gaming {
+        margin-left: 18%;
+    }
 }

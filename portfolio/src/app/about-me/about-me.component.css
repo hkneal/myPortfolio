@@ -19,12 +19,12 @@ p {
     font-family: quasimoda-2, sans-serif;
     -webkit-font-smoothing: subpixel-antialiased;
     font-style: normal;
-    font-size: 1.3rem;
-    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: 500;
     color: black;
-    margin: 70px;
-    margin-top: 10px;
-    margin-bottom: 40px;
+    margin: 3.5%;
+    margin-top: 1%;
+    margin-bottom: 4%;
 }
 
 h1 {
@@ -57,13 +57,15 @@ button {
     background-image: linear-gradient(to bottom, rgb(177, 185, 194), rgb(63, 64, 66));
     color: white;
     border-radius: 50px;
-    padding: .75rem;
+    padding: .85%;
     box-shadow: 5px 5px 10px black;
     font-family: quasimoda-2, sans-serif;
     -webkit-font-smoothing: subpixel-antialiased;
     font-style: normal;
     font-size: 1.5rem;
     font-weight: 400;
+    /* -webkit-transition: width 1s, height 1s, transform 1s;
+    transition: width 1s, height 1s, transform 1s; */
 }
 
 button:focus {
@@ -75,6 +77,8 @@ button:hover {
     background-image: -webkit-linear-gradient(top, rgb(190, 212, 234), rgb(32, 53, 95));
     background-image: -moz-linear-gradient(top, rgb(190, 212, 234), rgb(32, 53, 95));
     background-image: linear-gradient(to bottom, rgb(190, 212, 234), rgb(32, 53, 95));
+    /* -webkit-transition: rotate(360deg);
+    transform: rotate(360deg); */
 }
 
 a {
@@ -84,7 +88,7 @@ a {
     font-family: quasimoda-2, sans-serif;
     -webkit-font-smoothing: subpixel-antialiased;
     font-style: normal;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -96,17 +100,12 @@ footer {
     background-color: black;
     height: 2.75em;
     max-width: 100%;
-    margin-top: calc(64% - 2.75em);
-}
-
-.footerExpanded {
-    margin-top: calc(87% - 2.75em);
 }
 
 ul {
-    margin: 20px;
+    margin: 2%;
     margin-top: 0px;
-    margin-left: 80px;
+    margin-left: 10%;
     column-count: 2;
     list-style-type: none;
 }
@@ -117,19 +116,20 @@ li {
     -webkit-font-smoothing: subpixel-antialiased;
     font-style: normal;
     font-weight: 400;
+    font-size: 1rem;
 }
 
 .whoAmI {
     display: block;
     margin: auto;
-    margin-top: 3rem;
+    margin-top: 1%;
 }
 
 .items {
     color: white;
     width: 60%;
     margin: auto;
-    margin-top: 6rem;
+    margin-top: 6.5%;
     background-color: black;
 }
 
@@ -142,41 +142,35 @@ li {
     max-width: 61%;
     display: block;
     margin: auto;
-    margin-top: -60px;
+    margin-top: 2.5%;
     z-index: 9999;
     border-radius: 50px;
     border: 2px solid rgb(253, 254, 255);
     box-shadow: 5px 5px 10px black;
-    padding: 10px;
+    padding: 1%;
 }
 
 .hobbies video {
-    max-width: 350px;
+    max-width: 40%;
 }
 
 .hobbies p {
     margin: 0px;
     text-align: center;
     margin-top: .1875rem;
-    font-size: .75rem;
+    font-size: 1rem;
     color: rgb(252, 249, 249);
-}
-
-.generalDescription {
-    height: 595px;
 }
 
 .alexa {
     width: 100%;
-    height: 23.5rem;
-    margin-top: 2rem;
+    margin-top: 3%;
     background-color: rgb(255, 255, 255);
 }
 
 .alexa a {
     color: black;
-    /* font-style: italic;
-    text-decoration: underline; */
+    font-size: 1.5rem;
 }
 
 .alexa a:hover {
@@ -186,12 +180,12 @@ li {
 .projects {
     margin-top: 5%;
     background-color: gainsboro;
-    height: 65em;
-    padding-top: 1.25em;
+    padding-top: 2%;
+    padding-bottom: 4%;
 }
 
 .projectsExpanded {
-    height: 1369px;
+    max-height: 95%;
 }
 
 .projectDetails {
@@ -201,7 +195,6 @@ li {
     background-image: -moz-linear-gradient(top, rgb(183, 183, 183), rgb(33, 34, 43));
     background-image: linear-gradient(to bottom, rgb(183, 183, 183), rgb(33, 34, 43));
     border-radius: 20px;
-    /* border: 2px solid rgb(253, 254, 255); */
     border: 2px solid gainsboro;
     box-shadow: 5px 5px 10px black;
     padding: 10px;
@@ -216,9 +209,9 @@ li {
 .projectDiv {
     display: inline-block;
     vertical-align: top;
-    margin: 20px;
+    margin: 2%;
     margin-left: 0px;
-    margin-top: 42px;
+    margin-top: 4.5%;
     width: 50%;
     text-align: left;
 }
@@ -231,7 +224,7 @@ li {
     margin: 1%;
     margin-top: 4%;
     margin-left: 8%;
-    max-width: 24%;
+    max-width: 34%;
     margin-bottom: 0px;
     display: inline-block;
     color: white;
@@ -261,7 +254,7 @@ li {
     font-style: normal;
     font-weight: 400;
     font-size: 2rem;
-    margin-left: -180px;
+    margin-left: -50%;
 }
 
 .videoDiv:hover video {
@@ -273,32 +266,32 @@ li {
 }
 
 #newspaperPic {
-    width: 20%;
+    max-width: 20%;
     border: 1px solid lightgrey;
     border-radius: 15px;
 }
 
 #hobbiesButton {
-    max-width: 26rem;
+    max-width: 58%;
     display: block;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 2%;
 }
 
 #building {
     max-width: 26%;
-    margin: 23px;
+    margin: 2.5%;
 }
 
 #parentingPic {
     max-width: 23%;
-    margin: 20px;
+    margin: 2%;
     margin-left: 2.3%;
 }
 
 #building,
 #parentingPic {
-    margin-top: 10px;
+    margin-top: 1%;
     margin-bottom: 0px;
     border-radius: 10px;
     display: inline-block;
@@ -317,7 +310,7 @@ li {
 }
 
 #alexaDescription {
-    margin-bottom: 10px;
+    margin-bottom: 1%;
     color: black;
 }
 
@@ -330,27 +323,20 @@ li {
 
 #carpentry {
     display: inline-block;
-    margin: 10px;
-    margin-left: 87px;
+    margin: 1%;
+    margin-left: 9.5%;
 }
 
 #gaming,
 #parenting {
     display: inline-block;
-    margin: 10px;
+    margin: 1%;
     margin-top: 0px;
-    margin-left: 240px;
+    margin-left: 26%;
 }
 
 #gaming {
-    margin-left: 241px;
-    position: inherit;
-}
-
-#activities {
-    vertical-align: middle;
-    max-width: 22%;
-    margin-right: 10px;
+    margin-left: 22.2%;
     position: inherit;
 }
 
@@ -361,7 +347,7 @@ li {
     font-family: quasimoda-2, sans-serif;
     -webkit-font-smoothing: subpixel-antialiased;
     font-style: normal;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
     color: white;
 }
@@ -379,16 +365,18 @@ li {
 .projectDesc {
     display: inline-block;
     vertical-align: top;
-    margin: 20px;
+    margin: 2%;
     text-align: left;
 }
 
 .projectButton {
     display: inline-block;
-    margin-top: 0px;
-    padding: .5rem;
-    font-size: 1rem;
-    margin-left: calc(37% - 100px);
+    margin-top: 1%;
+    padding: 1%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    font-size: 1.5rem;
+    margin-left: 32%;
 }
 
 .clickforDemo {
@@ -405,242 +393,143 @@ li {
 .closeDetails {
     display: inline-block;
     margin-top: 1%;
-    margin-left: 90%;
+    margin-left: 85%;
     font-family: quasimoda-2, sans-serif;
     -webkit-font-smoothing: subpixel-antialiased;
     font-style: normal;
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 400;
     color: white;
 }
 
-@media screen {
+
+/* @media screen {
     .closeDetails {
         margin-left: 80%;
+    }
+} */
+
+@media screen and (aspect-ratio: 1600/2560) {
+    .items {
+        margin-top: 9.5%;
     }
 }
 
 @media screen and (max-width: 1030px) {
-    h2 {
-        font-size: 1.5rem;
+    img {
+        max-width: 75%;
     }
-    h1 {
-        font-size: 2.375rem;
-    }
-    .whoAmI {
-        margin-top: 2rem;
-    }
-    p {
-        font-size: 1rem;
-        margin: 2rem;
-        margin-top: .25rem;
-    }
-    button {
-        max-width: 10.625rem;
-        font-size: 1rem;
-        margin-left: 36%;
-    }
-    .generalDescription {
-        margin: auto;
-        max-width: 93%;
-        padding-top: 1rem;
-        height: 25.9375rem;
-    }
-    .videoContainer {
-        margin: 0;
-        margin-left: 2%;
-        margin-top: 8%;
-        max-width: 44%
-    }
-    .hobbies {
-        max-width: 73%;
-    }
-    .hobbies video {
-        max-width: 12.375rem;
-    }
-    footer {
-        margin-top: 90%;
-    }
-    .footerExpanded {
-        margin-top: 128%
-    }
-    .projects {
-        height: 55em;
-    }
-    .projectsExpanded {
-        height: 68.25em;
-    }
-    #otherInterests {
-        margin-left: 31%;
-    }
-    #close {
-        margin-left: 15%;
-    }
-    #building {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    #parentingPic {
-        margin: 0;
-        margin-left: 3%;
-    }
-    #carpentry {
-        margin-left: 2.625rem;
-    }
-    #gaming {
-        margin-left: 6.5rem;
-    }
-    #parenting {
-        margin-left: 6.4rem;
-    }
-}
-
-@media screen and (aspect-ratio: 1024/1366) {
-    .projects {
-        height: 71em;
-    }
-    .projectsExpanded {
-        height: 72em;
-    }
-    .footerExpanded {
-        margin-top: 91%;
-    }
-    .hobbies video {
-        max-width: 17.375rem;
-    }
-    #carpentry {
-        margin-left: 4.625rem;
-    }
-    #gaming,
-    #parenting {
-        margin-left: 10.5rem;
+    .items {
+        margin-top: 9.5%;
+        width: 75%;
     }
     #otherInterests {
         margin-left: 37%;
     }
+    #close {
+        margin-left: 16%;
+    }
+    #carpentry {
+        margin-left: 7.5%;
+    }
+    #gaming,
+    #parenting {
+        margin-left: 18.2%;
+    }
+}
+
+@media screen and (aspect-ratio: 1024/1366) {
+    img {
+        max-width: 75%;
+    }
+    .items {
+        margin-top: 9.5%;
+        width: 75%;
+    }
+    #otherInterests {
+        margin-left: 37%;
+    }
+    #close {
+        margin-left: 16%;
+    }
+    #carpentry {
+        margin-left: 7.5%;
+    }
+    #gaming,
+    #parenting {
+        margin-left: 18.2%;
+    }
 }
 
 @media screen and (aspect-ratio: 1366/1024) {
-    .hobbies video {
-        max-width: 20.7rem;
+    .items {
+        margin-top: 7.5%;
     }
-    .videoContainer {
-        margin-left: 2%;
-        max-width: 45%;
-    }
-    .projects {
-        height: 83em;
-    }
-    .projectsExpanded {
-        height: 87em;
-    }
-    footer {
-        margin-top: 82%;
-    }
-    .footerExpanded {
-        margin-top: 87%;
-    }
-    #gaming {
-        margin-left: 13.9375rem;
-    }
+    #gaming,
     #parenting {
-        margin-left: 13.75rem;
+        margin-left: 23.2%;
     }
 }
 
-@media screen and (aspect-ratio: 1024/768) {
-    .projects {
-        height: 71em;
-    }
-    .footerExpanded {
-        margin-top: 90%;
-    }
-}
 
-@media screen and (aspect-ratio: 768/1024) {
-    .projectsExpanded {
-        height: 78.25rem;
+/* @media screen and (aspect-ratio: 768/1024) { */
+
+@media screen and (max-width: 768px) {
+    img {
+        max-width: 80%;
     }
-    .footerExpanded {
-        margin-top: 134%;
+    h1 {
+        font-size: 2.7em;
+    }
+    .items {
+        margin-top: 10%;
+        width: 80%;
+    }
+    .hobbies {
+        max-width: 80%;
     }
 }
 
 @media screen and (aspect-ratio: 736/414) {
-    .footerExpanded {
-        margin-top: 144%;
+    .closeDetails {
+        margin-left: 75%;
     }
-    .projects {
-        height: 55.25em;
+    .videoContainer {
+        max-width: 43%;
+        margin-left: 3%;
     }
-    .projectsExpanded {
-        height: 79.25em;
-    }
-    /* footer {
-        margin-top: 90%;
-    } */
 }
 
 @media screen and (max-width: 720px) {}
 
 @media screen and (max-width: 667px) {
     h2 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     h1 {
-        font-size: 2.75rem;
-    }
-    p {
-        font-size: .7rem;
+        font-size: 2.5rem;
     }
     button {
-        max-width: 10.625rem;
+        font-size: .7rem;
+    }
+    p {
         font-size: 1rem;
-        margin-left: 33%;
     }
-    img {
-        max-width: 75%;
+    a {
+        font-size: 1rem;
     }
-    .items {
-        margin-top: 10%;
-        width: 75%;
+    li {
+        font-size: .7em;
     }
-    .contact {
-        margin-top: 0;
+    .projectButton {
+        font-size: 1rem;
     }
-    .hobbies {
-        max-width: 80%;
-    }
-    .generalDescription {
-        height: 22rem;
+    .closeDetails {
+        margin-left: 75%;
     }
 }
 
 @media screen and (max-width: 480px) {
-    p {
-        font-size: .7rem;
-        margin: 1rem;
-        margin-top: 0;
-    }
-    .items {
-        margin: auto;
-        width: 19.5rem;
-        margin-top: 4.5rem;
-    }
-    img {
-        max-width: 19.5rem;
-    }
-    .whoAmI {
-        margin-top: 1rem;
-    }
-    .generalDescription {
-        max-width: 93%;
-        padding: 1rem;
-        height: 17.1875rem;
-    }
-    .alexa {
-        height: 10.5rem;
-    }
     h2 {
         font-size: 1rem;
     }
@@ -648,71 +537,36 @@ li {
         font-size: 1.4rem;
     }
     button {
-        max-width: 7.625rem;
         font-size: .7rem;
-        margin-top: 1.5rem;
     }
-    ul {
-        margin-left: 5%
+    p {
+        font-size: .7rem;
+    }
+    a {
+        font-size: .7rem;
     }
     li {
-        font-size: .7rem;
+        font-size: .7em;
     }
-    footer {
-        margin-top: 113%;
-    }
-    .footerExpanded {
-        margin-top: 195%;
-    }
-    .hobbies {
-        max-width: 80%;
-    }
-    .hobbies video {
-        max-width: 121px;
-        margin-left: 3%;
-    }
-    .videoContainer {
-        max-width: 32%;
-        margin-top: 6%;
-        margin-left: 4%;
-    }
-    .projects {
-        height: 29em;
-    }
-    .projectsExpanded {
-        height: 51em;
-    }
-    .projectDiv {
-        margin-top: 5%;
-        margin-left: 2%;
-        width: 55%;
-    }
-    .projectDesc {
-        font-size: .7rem;
-        margin: 0;
-    }
-    .projectDetails {
-        padding: 1px;
-    }
-    #projects h1 {
-        font-size: 1.5rem;
+    .items {
+        margin-top: 12.5%;
     }
     .projectButton {
-        margin-top: 2%;
-        margin-left: 0;
-        padding: 1%;
-        font-size: .5rem;
-    }
-    .projectDetails p {
-        margin: .5rem;
-    }
-    .videoClickP {
-        margin: 0;
-    }
-    .clickforDemo {
         font-size: .7rem;
     }
     .closeDetails {
+        margin-left: 75%;
+        font-size: .7em;
+    }
+    .videoContainer {
+        max-width: 43%;
+        margin-left: 3%;
+    }
+    .alexa a {
+        font-size: .7em;
+    }
+    #alexaDescription a,
+    #alexaTry {
         font-size: .7rem;
     }
     #otherInterests {
@@ -722,209 +576,59 @@ li {
         font-size: .7rem;
         margin-left: 10%;
     }
-    #projects {
-        margin-top: 6%;
-    }
-    #alexaDescription {
-        margin: 1.5rem;
-    }
-    #alexaDescription a,
-    #alexaTry {
-        font-size: .7rem;
-    }
-    #alexaImg {
-        margin-top: .5rem;
-    }
-    #building,
-    #parentingPic {
-        margin: 0px;
-        margin-left: 2.5%;
-    }
-    #carpentry,
-    #gaming,
-    #parenting {
-        font-size: .7rem;
-        margin: 5px;
-    }
-    #carpentry {
-        margin-left: 1rem;
-    }
-    #gaming {
-        margin-left: 3.5rem;
-    }
-    #parenting {
-        margin-left: 4rem;
+    #building {
+        margin: 2%;
     }
 }
 
 @media screen and (max-width: 378px) {
-    h2 {
-        font-size: 1rem;
+    .hobbies {
+        max-width: 85%;
+        border-radius: 35px;
     }
-    h1 {
-        font-size: 1.7rem;
+    .videoContainer {
+        display: block;
+        margin: auto;
+        margin-top: 5%;
+        max-width: 68%;
     }
-    .items {
-        max-width: 23.5rem;
-        margin-top: 4.5rem;
+    p {
+        font-size: .9rem;
     }
-    .hobbies video {
-        max-width: 110px;
+    .alexa a {
+        font-size: .8rem;
     }
-    .generalDescription {
-        max-width: 22.6rem;
-        padding: 1rem;
+    .projectDiv {
+        display: block;
+        margin: auto;
+        margin-top: 2%;
+        width: 85%;
     }
-    footer {
-        margin-top: 130%;
+    .projectButton {
+        display: block;
+        margin: auto;
+        margin-left: 0p;
+        /* 0p error on purpose */
     }
-    .footerExpanded {
-        margin-top: 225%;
+    #newspaperPic {
+        max-width: 31%;
     }
-    #otherInterests {
-        margin-left: 27%;
-    }
-    #close {
-        margin-left: 6%;
-    }
-    #gaming {
-        margin-left: 2.5rem;
-    }
-    #parenting {
-        margin-left: 20%;
+    #alexaImg {
+        width: 15%;
     }
 }
 
 @media screen and (aspect-ratio: 320/568) {
-    img {
-        max-width: 70%;
-    }
-    h1 {
-        font-size: 1rem;
-    }
-    p {
-        margin: 1rem;
-        margin-top: .5rem;
-    }
-    .items {
-        display: block;
-        margin: auto;
-        margin-top: 13%;
-        width: 70%;
-    }
-    .hobbies {
-        max-width: 82%;
-        margin-top: -40px;
-    }
-    .hobbies video {
-        max-width: 91px;
-    }
     #otherInterests {
-        margin-left: 14%;
+        margin-left: 25%;
     }
-    #newspaperPic {
-        width: 25%;
-    }
-    #hobbiesButton {
-        margin-top: 1.2rem;
-        padding: .25rem;
-    }
-    #carpentry {
-        margin-left: .7rem;
-    }
-    #gaming {
-        margin-left: 2rem;
-    }
-    #parenting {
-        margin-left: 13%;
-    }
-    .videoContainer {
-        display: block;
-        margin: auto;
-        margin-top: 5%;
-        max-width: 65%;
-    }
-    .projectDiv {
-        margin: auto;
-        display: block;
-        margin-top: 2%;
-        width: 65%;
-    }
-    .projectDiv button {
-        margin: auto;
-        margin-top: 1%;
-        display: block;
-    }
-    .projects {
-        height: 41em;
-    }
-    .projectsExpanded {
-        height: 68em;
-    }
-    footer {
-        margin-top: 206%;
-    }
-    .footerExpanded {
-        margin-top: 342%;
+    #building {
+        margin: 1%;
     }
 }
 
 @media screen and (aspect-ratio: 568/320) {
-    h1 {
-        font-size: 1.5rem;
-    }
-    .hobbies video {
-        max-width: 10.4rem;
-    }
-    #otherInterests {
-        margin-left: 23%;
-    }
     #building {
-        margin-right: .5rem;
-    }
-    #parentingPic {
-        margin-left: 2%;
-    }
-    #carpentry {
-        margin-left: 2rem;
-    }
-    #gaming {
-        margin-left: 4.5rem;
-    }
-    #parenting {
-        margin-left: 4.4rem;
-    }
-    .videoContainer {
-        display: block;
-        margin: auto;
-        margin-top: 5%;
-        max-width: 55%;
-    }
-    .projectDiv {
-        display: block;
-        margin: auto;
-        margin-top: 0;
-        width: 65%;
-    }
-    .projectDiv p {
-        margin: 0;
-        font-size: 1rem;
-    }
-    .projectDiv button {
-        margin: auto;
-        margin-top: 1%;
-        display: block;
-    }
-    .projects {
-        height: 65em;
-    }
-    .projectsExpanded {
-        height: 96em;
-    }
-    footer {
-        margin-top: 137%;
-    }
-    .footerExpanded {
-        margin-top: 224%;
+        margin: 1.5%;
     }
 }
