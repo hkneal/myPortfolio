@@ -1,310 +1,313 @@
-.gamesMain {
-    width: 100%;
-    height: 100%;
-    margin-top: 4.1%;
-    position: fixed;
-}
-
-footer {
-    background-color: black;
-    height: 3.8em;
-    width: 100%;
-    margin-top: 47.1%;
-    position: absolute;
-    text-align: center;
-}
-
-video {
-    background-color: black;
-    width: 100%;
-    height: 86%;
-    position: absolute;
-    z-index: -1;
-}
-
-.description {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgb(42, 48, 95)));
-    background-image: -webkit-linear-gradient(top, rgb(0, 0, 0), rgb(42, 48, 95));
-    background-image: -moz-linear-gradient(top, rgb(0, 0, 0), rgb(42, 48, 95));
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(42, 48, 95));
-    border-radius: 15px;
-    margin: 2%;
-    margin-left: 54%;
-    margin-top: 23%;
-    padding: 2%;
-    opacity: .9;
-    width: 37%;
-    height: 30%;
-    overflow: scroll;
-}
-
-.threeColumn {
-    column-count: 3;
-}
-
-p,
-h1 {
-    color: white;
-    font-family: quasimoda-2, sans-serif;
-    -webkit-font-smoothing: subpixel-antialiased;
-    font-style: normal;
-    /* font-size: 1rem; */
-    font-weight: 400;
-}
-
-ul {
-    margin: 5%;
-    list-style-type: none;
-}
-
-li {
-    color: white;
-    font-family: quasimoda-2, sans-serif;
-    -webkit-font-smoothing: subpixel-antialiased;
-    font-style: normal;
-    /* font-size: 1rem; */
-    font-weight: 400;
-}
-
-#footerButton {
-    padding: .2%;
-    padding-left: 1%;
-    padding-right: 1%;
-    color: white;
-    margin: .6%;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(10, 11, 11)), to(rgb(63, 64, 66)));
-    background-image: -webkit-linear-gradient(top, rgb(10, 11, 11), rgb(63, 64, 66));
-    background-image: -moz-linear-gradient(top, rgb(10, 11, 11), rgb(63, 64, 66));
-    background-image: linear-gradient(to bottom, rgb(10, 11, 11), rgb(63, 64, 66));
-    font-family: quasimoda-2, sans-serif;
-    -webkit-font-smoothing: subpixel-antialiased;
-    font-style: normal;
-    font-size: 1.4rem;
-    font-weight: 400;
-    border-radius: 15px;
-}
-
-#footerButton:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(177, 185, 194)), to(rgb(63, 64, 66)));
-    background-image: -webkit-linear-gradient(top, rgb(177, 185, 194), rgb(63, 64, 66));
-    background-image: -moz-linear-gradient(top, rgb(177, 185, 194), rgb(63, 64, 66));
-    background-image: linear-gradient(to bottom, rgb(177, 185, 194), rgb(63, 64, 66));
-}
-
-#footerButton:active {
-    border: none;
-}
-
-.hobbies {
-    color: white;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(183, 183, 183)), to(rgb(33, 34, 43)));
-    background-image: -webkit-linear-gradient(top, rgb(183, 183, 183), rgb(33, 34, 43));
-    background-image: -moz-linear-gradient(top, rgb(183, 183, 183), rgb(33, 34, 43));
-    background-image: linear-gradient(to bottom, rgb(183, 183, 183), rgb(33, 34, 43));
-    /* position: absolute; */
-    max-width: 50%;
-    margin-left: 25%;
-    margin-top: -29rem;
-    z-index: 9999;
-    border-radius: 50px;
-    border: 2px solid rgb(253, 254, 255);
-    box-shadow: 5px 5px 10px black;
-    /* border: 2px solid rgb(177, 174, 174); */
-    padding: 1%;
-}
-
-.hobbies p {
-    margin: 0px;
-    text-align: center;
-    margin-top: .1875rem;
-    font-family: quasimoda-2, sans-serif;
-    -webkit-font-smoothing: subpixel-antialiased;
-    font-style: normal;
-    font-size: .75rem;
-    font-weight: 400;
-    color: rgb(252, 249, 249);
-}
-
-#homePic {
-    margin: 2%;
-    margin-left: 3%;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    position: inherit;
-    display: inline-block;
-    width: 29%;
-    max-height: 200px;
-    box-shadow: 5px 5px 20px black;
-}
-
-#building {
-    max-width: 28%;
-    margin: 2%;
-    margin-top: 1%;
-    margin-left: 3%;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    position: inherit;
-    box-shadow: 5px 5px 20px black;
-}
-
-#home {
-    margin-left: 13%;
-}
-
-#parenting {
-    display: inline-block;
-    margin: 10px;
-    margin-top: 0px;
-    margin-left: 22%
-}
-
-#parentingPic {
-    max-width: 24.7%;
-    margin: 1%;
-    margin-top: 1%;
-    margin-left: 3%;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    position: inherit;
-}
-
-#carpentry {
-    margin-left: 27%
-}
-
-a {
-    color: inherit;
-    color: white;
-    text-decoration: none;
-    font-family: quasimoda-2, sans-serif;
-    -webkit-font-smoothing: subpixel-antialiased;
-    font-style: normal;
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-a:hover {
-    color: rgb(163, 159, 157);
-}
-
-#otherInterests {
-    display: inline-block;
-    margin-left: 37%;
-}
-
-#close {
-    display: inline-block;
-    margin-top: 1%;
-    margin-left: 25%;
-    font-family: quasimoda-2, sans-serif;
-    -webkit-font-smoothing: subpixel-antialiased;
-    font-style: normal;
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-h2 {
-    text-align: center;
-    font-family: quasimoda-2, sans-serif;
-    -webkit-font-smoothing: subpixel-antialiased;
-    /* font-family: quasimoda, sans-serif; */
-    font-style: normal;
-    font-size: 1.5rem;
-    font-weight: 100;
-    color: white;
-}
-
-button:focus {
-    outline: 0;
-}
-
-@media screen and (aspect-ratio: 736/414) {
     .gamesMain {
-        margin-top: 7.4%;
+        width: 100%;
+        height: 100%;
+        margin-top: 4.1%;
+        position: fixed;
     }
+    
     footer {
-        height: 2.8em;
-        margin-top: 50.1%;
+        background-color: black;
+        height: 3.75em;
+        width: 100%;
+        margin-top: 47.1%;
+        position: absolute;
+        text-align: center;
     }
+    
+    video {
+        background-color: black;
+        width: 100%;
+        height: 86%;
+        position: absolute;
+        z-index: -1;
+    }
+    
+    .description {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgb(42, 48, 95)));
+        background-image: -webkit-linear-gradient(top, rgb(0, 0, 0), rgb(42, 48, 95));
+        background-image: -moz-linear-gradient(top, rgb(0, 0, 0), rgb(42, 48, 95));
+        background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(42, 48, 95));
+        border-radius: 15px;
+        margin: 2%;
+        margin-left: 54%;
+        margin-top: 23%;
+        padding: 2%;
+        opacity: .9;
+        width: 37%;
+        height: 30%;
+        overflow: scroll;
+    }
+    
+    .threeColumn {
+        column-count: 3;
+    }
+    
     p,
     h1 {
-        font-size: .7rem;
+        color: white;
+        font-family: quasimoda-2, sans-serif;
+        -webkit-font-smoothing: subpixel-antialiased;
+        font-style: normal;
+        /* font-size: 1rem; */
+        font-weight: 400;
     }
-    li {
-        font-size: .5rem;
-    }
+    
     ul {
-        margin: 3%;
+        margin: 5%;
+        list-style-type: none;
     }
-    .description {
-        height: 27%;
-    }
-    .hobbies {
-        margin: auto;
-        margin-left: 2p;
-        margin-top: -40%;
-        max-width: 87%;
-    }
-    #otherInterests {
-        margin-left: 35%;
-    }
-}
-
-@media screen and (aspect-ratio: 414/736) {
-    video {
-        height: 92%;
-    }
-    footer {
-        margin-top: 166.1%;
-        height: 2.8rem;
-    }
-    .description {
-        margin: auto;
-        margin-top: 111%;
-        margin-left: 0p;
-        height: 26%;
-        width: 96%;
-    }
-    p,
-    h1,
+    
     li {
-        font-size: 1rem;
+        color: white;
+        font-family: quasimoda-2, sans-serif;
+        -webkit-font-smoothing: subpixel-antialiased;
+        font-style: normal;
+        /* font-size: 1rem; */
+        font-weight: 400;
     }
+    
+    #footerButton {
+        padding: .2%;
+        padding-left: 1%;
+        padding-right: 1%;
+        color: white;
+        margin: .6%;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(10, 11, 11)), to(rgb(63, 64, 66)));
+        background-image: -webkit-linear-gradient(top, rgb(10, 11, 11), rgb(63, 64, 66));
+        background-image: -moz-linear-gradient(top, rgb(10, 11, 11), rgb(63, 64, 66));
+        background-image: linear-gradient(to bottom, rgb(10, 11, 11), rgb(63, 64, 66));
+        font-family: quasimoda-2, sans-serif;
+        -webkit-font-smoothing: subpixel-antialiased;
+        font-style: normal;
+        font-size: 1.4rem;
+        font-weight: 400;
+        border-radius: 15px;
+    }
+    
+    #footerButton:hover {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(177, 185, 194)), to(rgb(63, 64, 66)));
+        background-image: -webkit-linear-gradient(top, rgb(177, 185, 194), rgb(63, 64, 66));
+        background-image: -moz-linear-gradient(top, rgb(177, 185, 194), rgb(63, 64, 66));
+        background-image: linear-gradient(to bottom, rgb(177, 185, 194), rgb(63, 64, 66));
+    }
+    
+    #footerButton:active {
+        border: none;
+    }
+    
     .hobbies {
-        margin: auto;
-        margin-left: 2p;
-        margin-top: -135%;
-        max-width: 87%;
-    }
-    #otherInterests {
+        color: white;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(183, 183, 183)), to(rgb(33, 34, 43)));
+        background-image: -webkit-linear-gradient(top, rgb(183, 183, 183), rgb(33, 34, 43));
+        background-image: -moz-linear-gradient(top, rgb(183, 183, 183), rgb(33, 34, 43));
+        background-image: linear-gradient(to bottom, rgb(183, 183, 183), rgb(33, 34, 43));
+        /* position: absolute; */
+        max-width: 50%;
         margin-left: 25%;
+        margin-top: -29rem;
+        z-index: 9999;
+        border-radius: 50px;
+        border: 2px solid rgb(253, 254, 255);
+        box-shadow: 5px 5px 10px black;
+        /* border: 2px solid rgb(177, 174, 174); */
+        padding: 1%;
     }
-    #close {
-        margin-left: 4%;
-        font-size: .7rem;
+    
+    .hobbies p {
+        margin: 0px;
+        text-align: center;
+        margin-top: .1875rem;
+        font-family: quasimoda-2, sans-serif;
+        -webkit-font-smoothing: subpixel-antialiased;
+        font-style: normal;
+        font-size: .75rem;
+        font-weight: 400;
+        color: rgb(252, 249, 249);
     }
+    
     #homePic {
-        margin: 1%;
-        margin-left: 4%;
+        margin: 2%;
+        margin-left: 3%;
+        margin-bottom: 0px;
+        border-radius: 10px;
+        position: inherit;
+        display: inline-block;
         width: 29%;
+        max-height: 200px;
+        box-shadow: 5px 5px 20px black;
     }
+    
     #building {
-        margin: 1%;
-        margin-top: 3%;
-        margin-left: 3%
+        max-width: 28%;
+        margin: 2%;
+        margin-top: 1%;
+        margin-left: 3%;
+        margin-bottom: 0px;
+        border-radius: 10px;
+        position: inherit;
+        box-shadow: 5px 5px 20px black;
     }
-    #parentingPic {
-        margin: 1%;
-    }
+    
     #home {
         margin-left: 13%;
     }
-    #carpentry {
-        margin-left: 17%;
-    }
+    
     #parenting {
-        margin: 1%;
-        margin-left: 10%;
+        display: inline-block;
+        margin: 10px;
+        margin-top: 0px;
+        margin-left: 22%
     }
-}
+    
+    #parentingPic {
+        max-width: 24.7%;
+        margin: 1%;
+        margin-top: 1%;
+        margin-left: 3%;
+        margin-bottom: 0px;
+        border-radius: 10px;
+        position: inherit;
+    }
+    
+    #carpentry {
+        margin-left: 27%
+    }
+    
+    a {
+        color: inherit;
+        color: white;
+        text-decoration: none;
+        font-family: quasimoda-2, sans-serif;
+        -webkit-font-smoothing: subpixel-antialiased;
+        font-style: normal;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+    a:hover {
+        color: rgb(163, 159, 157);
+    }
+    
+    #otherInterests {
+        display: inline-block;
+        margin-left: 37%;
+    }
+    
+    #close {
+        display: inline-block;
+        margin-top: 1%;
+        margin-left: 25%;
+        font-family: quasimoda-2, sans-serif;
+        -webkit-font-smoothing: subpixel-antialiased;
+        font-style: normal;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+    h2 {
+        text-align: center;
+        font-family: quasimoda-2, sans-serif;
+        -webkit-font-smoothing: subpixel-antialiased;
+        /* font-family: quasimoda, sans-serif; */
+        font-style: normal;
+        font-size: 1.5rem;
+        font-weight: 100;
+        color: white;
+    }
+    
+    button:focus {
+        outline: 0;
+    }
+    
+    @media screen and (min-width: 414px) and (max-height: 736px) {
+        video {
+            height: 92%;
+        }
+        footer {
+            margin-top: 166.1%;
+            height: 2.8rem;
+        }
+        .description {
+            margin: auto;
+            margin-top: 111%;
+            margin-left: 0p;
+            height: 26%;
+            width: 96%;
+        }
+        p,
+        h1,
+        li {
+            font-size: 1rem;
+        }
+        .hobbies {
+            margin: auto;
+            margin-left: 2p;
+            margin-top: -135%;
+            max-width: 87%;
+        }
+        #otherInterests {
+            margin-left: 25%;
+        }
+        #close {
+            margin-left: 4%;
+            font-size: .7rem;
+        }
+        #homePic {
+            margin: 1%;
+            margin-left: 4%;
+            width: 29%;
+        }
+        #building {
+            margin: 1%;
+            margin-top: 3%;
+            margin-left: 3%
+        }
+        #parentingPic {
+            margin: 1%;
+        }
+        #home {
+            margin-left: 13%;
+        }
+        #carpentry {
+            margin-left: 17%;
+        }
+        #parenting {
+            margin: 1%;
+            margin-left: 10%;
+        }
+    }
+    
+    @media screen and (min-width: 736px) and (max-height: 414px) {
+        .gamesMain {
+            margin-top: 7.4%;
+        }
+        footer {
+            height: 2.8em;
+            margin-top: 50.1%;
+        }
+        p,
+        h1 {
+            font-size: .9rem;
+        }
+        li {
+            font-size: .7rem;
+        }
+        ul {
+            margin: 3%;
+        }
+        .description {
+            margin-top: 0%;
+            margin-left: 73%;
+            height: 69%;
+            width: 19%;
+        }
+        .hobbies {
+            margin: auto;
+            margin-left: 2p;
+            margin-top: -42%;
+            max-width: 87%;
+        }
+        #otherInterests {
+            margin-left: 35%;
+        }
+    }

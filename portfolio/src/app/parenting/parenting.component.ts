@@ -56,7 +56,7 @@ export class ParentingComponent implements OnInit{
     this.state = (this.state === 'visable' ? 'hiddenOut' : 'hiddenOut');
   }
   animateMenu(){
-    this.state = (this.state === 'hiddenOut' ? 'hiddenIn' : 'hiddenOut');
+    this.state = (this.state === 'visable' ? 'hiddenIn' : this.state === 'hiddenIn' ? 'hiddenOut' : 'hiddenIn');
   }
 
   home():void{

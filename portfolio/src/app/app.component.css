@@ -358,6 +358,12 @@ nav {
     nav {
         margin-left: 24%;
     }
+    header {
+        max-height: 6.5%;
+    }
+    .background {
+        height: 6.5%;
+    }
 }
 
 @media screen and (max-width: 375px) {

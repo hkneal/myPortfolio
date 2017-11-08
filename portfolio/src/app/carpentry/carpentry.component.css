@@ -228,38 +228,7 @@ h2 {
     font-weight: 400;
 }
 
-@media screen and (aspect-ratio: 736/414) {
-    img {
-        max-width: 17%;
-    }
-    footer {
-        margin-top: 2.5%;
-    }
-    .treehouseMain {
-        margin-top: 7.4%;
-    }
-    .hobbies {
-        max-width: 87%;
-        margin-top: 5%;
-    }
-    .pictureViewer {
-        margin-top: 5%;
-    }
-    .treehouse h1 {
-        font-size: 1rem;
-    }
-    .vertical-Line {
-        height: .9em;
-    }
-    #close {
-        margin-left: 21%;
-    }
-    .pictureViewer p {
-        font-size: 1rem;
-    }
-}
-
-@media screen and (aspect-ratio: 414/736) {
+@media screen and (min-width:414px) and (max-height:736px) {
     img {
         max-width: 31%;
     }
@@ -302,5 +271,36 @@ h2 {
     }
     #gaming {
         margin-left: 18%;
+    }
+}
+
+@media screen and (min-width:736px) and (max-height:414px) {
+    img {
+        max-width: 17%;
+    }
+    footer {
+        margin-top: 2.5%;
+    }
+    .treehouseMain {
+        margin-top: 7.4%;
+    }
+    .hobbies {
+        max-width: 87%;
+        margin-top: 5%;
+    }
+    .pictureViewer {
+        margin-top: 5%;
+    }
+    .treehouse h1 {
+        font-size: 1rem;
+    }
+    .vertical-Line {
+        height: .9em;
+    }
+    #close {
+        margin-left: 21%;
+    }
+    .pictureViewer p {
+        font-size: 1rem;
     }
 }
