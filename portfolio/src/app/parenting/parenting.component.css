@@ -206,111 +206,6 @@
              outline: 0;
          }
          
-         @media only screen and (min-width: 414px) and (max-width: 736px) and (orientation: landscape) {
-             p {
-                 font-size: 1rem;
-             }
-             footer {
-                 margin-top: 36%;
-             }
-             .parentingMain {
-                 margin-top: 10.7%;
-             }
-             .introduction {
-                 width: 75%;
-                 margin-left: 10.5%;
-                 margin-top: -63%;
-             }
-             .smallPics {
-                 max-width: 24%;
-             }
-             .smallPicsd {
-                 display: none;
-             }
-             .hobbies {
-                 max-width: 90%;
-                 margin: auto;
-                 margin-left: 2p;
-                 margin-top: -82%;
-             }
-             #otherInterests {
-                 margin-left: 25%;
-             }
-             #close {
-                 margin-left: 3%;
-                 font-size: .7rem;
-             }
-             #homePic {
-                 margin: 1%;
-             }
-             #home {
-                 margin-left: 12%;
-             }
-             #carpentry,
-             #gaming {
-                 margin-left: 15%;
-             }
-             #footerButton {
-                 margin: 2%;
-             }
-         }
-         
-         @media only screen and (min-width: 414px) and (max-width: 736px) and (orientation: portrait) {
-             footer {
-                 margin-top: 11%;
-             }
-             .hobbies {
-                 margin: auto;
-                 margin-left: 1p;
-                 margin-top: -39%;
-                 max-width: 93%;
-             }
-             .parentingMain {
-                 margin-top: 7.4%;
-             }
-             .introduction {
-                 width: 85%;
-                 margin-left: 5%;
-                 margin-top: -66%;
-             }
-             .introduction p {
-                 font-size: 1.5rem;
-             }
-             .smallPics {
-                 max-width: 16%;
-             }
-             .smallPicsd {
-                 display: none;
-             }
-             .hobbies {
-                 margin-left: 1%;
-                 max-width: 94%;
-                 margin-top: -14rem;
-             }
-             #footerButton {
-                 margin: 1%;
-             }
-             #otherInterests {
-                 margin-left: 23%;
-             }
-             #close {
-                 margin-left: 4%;
-                 font-size: .7rem;
-             }
-             #homePic {
-                 margin: 1%;
-             }
-             #carpentry {
-                 margin-left: 13%;
-             }
-             #gaming {
-                 margin-left: 12%;
-             }
-             #footerButton {
-                 margin: 2%;
-             }
-         }
-         
          @media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: portrait) {
              .parentingMain {
                  margin-top: 12.9%;
@@ -397,5 +292,104 @@
                  margin-left: 6%;
                  max-width: 86%;
                  margin-top: -21rem;
+             }
+         }
+         
+         @media only screen and (min-width: 414px) and (max-width: 736px) and (orientation: landscape) {
+             p {
+                 font-size: 1rem;
+             }
+             footer {
+                 margin-top: 45%;
+             }
+             .parentingMain {
+                 margin-top: 7.4%;
+             }
+             .introduction {
+                 width: 75%;
+                 margin-left: 10.5%;
+                 margin-top: -63%;
+             }
+             .smallPics {
+                 max-width: 16%;
+             }
+             .smallPicsd {
+                 display: none;
+             }
+             .hobbies {
+                 max-width: 90%;
+                 margin: auto;
+                 margin-left: 2p;
+                 margin-top: -82%;
+             }
+             #otherInterests {
+                 margin-left: 25%;
+             }
+             #close {
+                 margin-left: 3%;
+                 font-size: .7rem;
+             }
+             #homePic {
+                 margin: 1%;
+             }
+             #home {
+                 margin-left: 12%;
+             }
+             #carpentry,
+             #gaming {
+                 margin-left: 15%;
+             }
+             #footerButton {
+                 margin: 2%;
+             }
+         }
+         
+         @media only screen and (min-width: 414px) and (max-width: 736px) and (orientation: portrait) {
+             footer {
+                 margin-top: 11%;
+             }
+             .hobbies {
+                 margin: auto;
+                 margin-left: 1p;
+                 margin-top: -39%;
+                 max-width: 93%;
+             }
+             .parentingMain {
+                 margin-top: 11.4%;
+             }
+             .introduction {
+                 width: 85%;
+                 margin-left: 5%;
+                 margin-top: -66%;
+             }
+             .introduction p {
+                 font-size: 1.5rem;
+             }
+             .hobbies {
+                 margin-left: 1%;
+                 max-width: 94%;
+                 margin-top: -14rem;
+             }
+             #footerButton {
+                 margin: 1%;
+             }
+             #otherInterests {
+                 margin-left: 23%;
+             }
+             #close {
+                 margin-left: 4%;
+                 font-size: .7rem;
+             }
+             #homePic {
+                 margin: 1%;
+             }
+             #carpentry {
+                 margin-left: 13%;
+             }
+             #gaming {
+                 margin-left: 12%;
+             }
+             #footerButton {
+                 margin: 2%;
              }
          }
