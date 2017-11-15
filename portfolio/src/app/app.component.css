@@ -134,7 +134,7 @@ nav {
     vertical-align: middle;
 }
 
-@media screen and (max-width: 1030px) {
+@media only screen and (max-width: 1030px) {
     nav {
         margin-left: 32%;
         vertical-align: bottom;
@@ -160,7 +160,7 @@ nav {
     }
 }
 
-@media screen and (max-aspect-ratio: 1024/1366) {
+@media only screen and (max-aspect-ratio: 1024/1366) {
     .background {
         height: 6%;
     }
@@ -181,7 +181,7 @@ nav {
     }
 }
 
-@media screen and (aspect-ratio: 2560/1600) {
+@media only screen and (aspect-ratio: 2560/1600) {
     a {
         font-size: 2rem;
     }
@@ -190,7 +190,7 @@ nav {
     }
 }
 
-@media screen and (aspect-ratio: 1600/2560) {
+@media only screen and (aspect-ratio: 1600/2560) {
     a {
         font-size: 1.5rem;
     }
@@ -223,13 +223,13 @@ nav {
     }
 }
 
-@media screen and (aspect-ratio: 1366/1024) {
+@media only screen and (aspect-ratio: 1366/1024) {
     nav {
         margin-top: 2.2%;
     }
 }
 
-@media screen and (aspect-ratio: 1024/768) {
+@media only screen and (aspect-ratio: 1024/768) {
     header {
         max-height: 8%
     }
@@ -246,13 +246,13 @@ nav {
     }
 }
 
-@media screen and (aspect-ratio: 736/414) {
+@media only screen and (aspect-ratio: 736/414) {
     .background {
         height: 13%;
     }
 }
 
-@media screen and (aspect-ratio: 768/1024) {
+@media only screen and (aspect-ratio: 768/1024) {
     header {
         max-height: 6%
     }
@@ -269,7 +269,16 @@ nav {
     }
 }
 
-@media screen and (max-width: 720px) {
+@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
+    .background {
+        height: 13%;
+    }
+    .contact hr {
+        margin: 2%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
     nav {
         margin-left: 49%;
         vertical-align: bottom;
@@ -277,7 +286,7 @@ nav {
     }
 }
 
-@media screen and (max-width: 667px) {
+@media only screen and (max-width: 667px) {
     nav {
         margin-left: 34%;
         margin-bottom: 2%;
@@ -293,13 +302,13 @@ nav {
     }
 }
 
-@media screen and (max-width: 667px) {
+@media only screen and (max-width: 667px) {
     nav {
         margin-left: 32%;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     header {
         max-height: 6%;
     }
@@ -345,13 +354,13 @@ nav {
     }
 }
 
-@media screen and (aspect-ratio: 736/414) {
+@media only screen and (aspect-ratio: 736/414) {
     .contact hr {
         margin: 3%;
     }
 }
 
-@media screen and (aspect-ratio: 414/736) {
+@media only screen and (aspect-ratio: 414/736) {
     .contact {
         margin-top: 1%;
     }
@@ -366,7 +375,7 @@ nav {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media only screen and (max-width: 375px) {
     nav {
         margin-left: 2%;
         vertical-align: bottom;
@@ -387,7 +396,7 @@ nav {
     }
 }
 
-@media screen and (aspect-ratio: 360/640) {
+@media only screen and (aspect-ratio: 360/640) {
     .homeTag a {
         font-size: 1rem;
     }
@@ -397,7 +406,7 @@ nav {
     }
 }
 
-@media screen and (aspect-ratio: 320/568) {
+@media only screen and (aspect-ratio: 320/568) {
     .homeTag a {
         font-size: 1rem;
     }
@@ -407,7 +416,7 @@ nav {
     }
 }
 
-@media screen and (aspect-ratio: 568/320) {
+@media only screen and (aspect-ratio: 568/320) {
     .homeTag a {
         font-size: 1.5rem;
     }

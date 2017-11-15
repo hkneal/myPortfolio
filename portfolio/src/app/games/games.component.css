@@ -1,25 +1,31 @@
     .gamesMain {
         width: 100%;
-        height: 100%;
+        /* height: 100%; */
         margin-top: 4.1%;
-        position: fixed;
+        position: absolute;
+        background-color: black;
+    }
+    
+    .videoDiv {
+        margin-top: 2%;
+        height: 36.9375rem;
     }
     
     footer {
         background-color: black;
         height: 3.75em;
         width: 100%;
-        margin-top: 47.1%;
-        position: absolute;
+        /* margin-top: 47.1%; */
+        /* position: absolute; */
         text-align: center;
     }
     
     video {
         background-color: black;
         width: 100%;
-        height: 84%;
+        height: 85%;
         position: absolute;
-        z-index: -1;
+        z-index: 9997;
     }
     
     .description {
@@ -30,12 +36,13 @@
         border-radius: 15px;
         margin: 2%;
         margin-left: 56%;
-        margin-top: 23%;
+        margin-top: 18.7%;
         padding: 2%;
         opacity: .9;
         width: 37%;
-        height: 26%;
-        overflow: scroll;
+        /* height: 26%; */
+        position: absolute;
+        z-index: 9998;
     }
     
     .threeColumn {
@@ -104,13 +111,14 @@
         /* position: absolute; */
         max-width: 50%;
         margin-left: 25%;
-        margin-top: -29rem;
+        margin-top: 7rem;
         z-index: 9999;
         border-radius: 50px;
         border: 2px solid rgb(253, 254, 255);
         box-shadow: 5px 5px 10px black;
         /* border: 2px solid rgb(177, 174, 174); */
         padding: 1%;
+        position: absolute;
     }
     
     .hobbies p {
@@ -223,21 +231,67 @@
         display: none;
     }
     
-    @media screen and (max-width: 812px) and (max-height: 812px) {}
+    @media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: portrait) {
+        /* iphone x */
+        .videoDiv {
+            margin-top: 6%;
+            height: 44.9375rem;
+        }
+        .description {
+            width: 94%;
+            margin-left: 1%;
+            margin-top: 129.5%
+        }
+        .description h1 {
+            font-size: 1.5rem;
+        }
+        .hobbies {
+            max-width: 92%;
+            margin-left: 2%;
+        }
+        #otherInterests {
+            margin-left: 21%;
+        }
+        #close {
+            font-size: .7rem;
+            margin-left: 7%;
+        }
+        #home {
+            margin-left: 12%
+        }
+        #carpentry {
+            margin-left: 17%
+        }
+        #parenting {
+            margin-left: 10%;
+        }
+    }
     
-    @media screen and (min-width: 414px) and (max-height: 736px) {
+    @media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
+        /* iphone x */
+        .description {
+            margin-left: 59%;
+            margin-top: 11.5%;
+        }
+        .hobbies {
+            max-width: 86%;
+            margin-left: 5%;
+            margin-top: 8rem;
+        }
+    }
+    
+    @media only screen and (min-width: 414px) and (max-width: 736px) and (orientation: portrait) {
+        /* iPhone 6+, 7+, 8+ plus */
         video {
-            height: 92%;
+            height: 70%;
         }
         footer {
-            margin-top: 166.1%;
             height: 2.8rem;
         }
         .description {
             margin: auto;
             margin-top: 111%;
             margin-left: 0p;
-            height: 23%;
             width: 96%;
         }
         li {
@@ -285,7 +339,10 @@
         }
     }
     
-    @media screen and (min-width: 736px) and (max-height: 414px) {
+    @media only screen and (min-width: 414px) and (max-width: 736px) and (orientation: landscape) {
+        .videoDiv {
+            height: 31.9375rem;
+        }
         .gamesMain {
             margin-top: 7.4%;
         }
@@ -293,8 +350,7 @@
             height: 76%;
         }
         footer {
-            height: 2.8em;
-            margin-top: 50.1%;
+            height: 3.75em;
         }
         p,
         h1 {
@@ -307,15 +363,13 @@
             margin: 3%;
         }
         .description {
-            margin-top: 0%;
+            margin-top: 20%;
             margin-left: 73%;
-            height: 61%;
             width: 22%;
         }
         .hobbies {
-            margin: auto;
-            margin-left: 2p;
-            margin-top: -42%;
+            margin-left: 5%;
+            margin-top: 16%;
             max-width: 87%;
         }
         #otherInterests {

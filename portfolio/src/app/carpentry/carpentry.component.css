@@ -3,16 +3,15 @@ footer {
     height: 3.75em;
     width: 100%;
     margin-top: 10.5%;
-    position: absolute;
 }
 
 .treehouseMain {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     background-image: url("/assets/images/Fotosearch_k17405522.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    position: fixed;
+    position: absolute;
     margin-top: 4.1%;
 }
 
@@ -228,7 +227,126 @@ h2 {
     font-weight: 400;
 }
 
-@media screen and (min-width:414px) and (max-height:736px) {
+.treehouseMobile {
+    width: 100%;
+    position: absolute;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(56, 56, 56)), to(rgb(15, 15, 15)));
+    background-image: -webkit-linear-gradient(top, rgb(56, 56, 56), rgb(15, 15, 15));
+    background-image: -moz-linear-gradient(top, rgb(56, 56, 56), rgb(15, 15, 15));
+    background-image: linear-gradient(to bottom, rgb(56, 56, 56), rgb(15, 15, 15));
+    display: none;
+}
+
+@media only screen and (max-width: 1366px) and (max-height: 1366px) {
+    .treehouseMobile {
+        display: inherit;
+    }
+    .treehouse {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
+    .treehouseMobile h1 {
+        font-size: 1.3rem;
+    }
+    .treehouseMain {
+        margin-top: 6%;
+    }
+    #treehouseH1 {
+        margin-left: 6%;
+    }
+    .pictureViewer {
+        padding-bottom: 0%;
+        margin-top: 7%
+    }
+    .hobbies {
+        max-width: 88%;
+    }
+    footer {
+        margin-top: 7.5%;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: portrait) {
+    img {
+        max-width: 31%;
+    }
+    footer {
+        margin-top: 100%;
+    }
+    .treehouseMain {
+        margin-top: 13.1%;
+    }
+    .treehouseMobile {
+        font-size: .4rem;
+    }
+    .pictureViewer {
+        margin-top: 16%;
+    }
+    .vertical-Line {
+        margin-left: 0%;
+    }
+    .menuItem {
+        margin-left: 3%;
+    }
+    .hobbies {
+        margin-top: 37%;
+        max-width: 90%;
+    }
+    #homeTag {
+        margin-left: 12%;
+    }
+    #gaming {
+        margin-left: 18%;
+    }
+    #parenting {
+        margin-left: 11%;
+    }
+    #treehouseH1 {
+        margin-left: 1%;
+    }
+    #otherInterests {
+        margin-left: 20%;
+    }
+    #close {
+        margin-left: 3%;
+        font-size: .7rem;
+    }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 736px) and (orientation: landscape) {
+    img {
+        max-width: 17%;
+    }
+    footer {
+        margin-top: 8.5%;
+    }
+    .treehouseMain {
+        margin-top: 7.4%;
+    }
+    .hobbies {
+        max-width: 87%;
+        margin-top: 5%;
+    }
+    .pictureViewer {
+        margin-top: 8%;
+    }
+    .treehouse h1 {
+        font-size: 1rem;
+    }
+    .vertical-Line {
+        height: .9em;
+    }
+    #treehouseH1 {
+        margin-left: 2%;
+    }
+    #close {
+        margin-left: 21%;
+    }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 736px) and (orientation: portrait) {
     img {
         max-width: 31%;
     }
@@ -271,36 +389,5 @@ h2 {
     }
     #gaming {
         margin-left: 18%;
-    }
-}
-
-@media screen and (min-width:736px) and (max-height:414px) {
-    img {
-        max-width: 17%;
-    }
-    footer {
-        margin-top: 2.5%;
-    }
-    .treehouseMain {
-        margin-top: 7.4%;
-    }
-    .hobbies {
-        max-width: 87%;
-        margin-top: 5%;
-    }
-    .pictureViewer {
-        margin-top: 5%;
-    }
-    .treehouse h1 {
-        font-size: 1rem;
-    }
-    .vertical-Line {
-        height: .9em;
-    }
-    #close {
-        margin-left: 21%;
-    }
-    .pictureViewer p {
-        font-size: 1rem;
     }
 }

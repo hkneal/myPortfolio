@@ -8,6 +8,15 @@
         <span class="vertical-Line"></span>
         <h1 class="menuItem" (mouseenter)="animateMenu()">Other Interests</h1>
     </div>
+    <div class="treehouseMobile">
+        <h1 id="treehouseH1" (click)="animateTreehouse()">Treehouse</h1>
+        <span class="vertical-Line"></span>
+        <h1 class="menuItem" (click)="animateEntertainmentCenter()">Television Center</h1>
+        <span class="vertical-Line"></span>
+        <h1 class="menuItem" (click)="animateBeds()">Custom Beds</h1>
+        <span class="vertical-Line"></span>
+        <h1 class="menuItem" (click)="animateMenu()">Other Interests</h1>
+    </div>
     <div [@treehouseAnimation]='state' class="pictureViewer">
         <img src="assets/images/Treehouse/DSCN0256.jpg" alt="">
         <img src="assets/images/Treehouse/DSCN0257.jpg" alt="">

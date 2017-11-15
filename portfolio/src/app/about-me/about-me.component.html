@@ -24,7 +24,7 @@
             <!-- <a style="cursor:pointer"><video loop autoplay> <source src="/assets/videos/Chess_Play.mp4"></video></a> -->
             <!-- <a style="cursor:pointer"><video (click)="gaming()" loop autoplay> <source src="/assets/videos/Chess_Play_color.mp4"></video></a> -->
             <a class="desktopView" style="cursor:pointer"><video (click)="gaming()" loop autoplay> <source src="/assets/videos/Chess_gamplay_color_low.mp4"></video></a>
-            <a class="mobileView" style="cursor:pointer"><video (click)="gaming()" controls> <source src="/assets/videos/Chess_gamplay_color_low.mp4" type="video/mp4"></video></a>
+            <video class="mobileView" controls> <source src="/assets/videos/Chess_gamplay_color_low.mp4" type="video/mp4"></video>
             <a style="cursor:pointer"><img (click)="parenting()" id="parentingPic" src="assets/images/IMG_1370.jpg" alt=""></a>
             <a id="carpentry" (click)="carpentry()" style="cursor:pointer">Carpentry</a>
             <a id="gaming" (click)="gaming()" style="cursor:pointer">Gaming</a>
@@ -87,7 +87,7 @@
                 <div class="videoContainer">
                     <div class="videoDiv">
                         <video style="cursor:pointer" class="videoDemo" controls><source src="assets/videos/hnBookReview.mp4" type="video/mp4"></video>
-                        <h2 style="cursor:pointer"><a href="http://www.hnbookreviews.com">Click To Try Me!</a></h2>
+                        <!-- <h2 style="cursor:pointer"><a href="http://www.hnbookreviews.com">Click To Try Me!</a></h2> -->
                     </div>
                     <p class="videoClickP" style="cursor:pointer"><a class="clickforDemo" href="http://www.hnbookreviews.com">Click for a Demo!</a></p>
                 </div>
@@ -107,8 +107,8 @@
                 </div>
                 <div class="videoContainer">
                     <div class="videoDiv">
-                        <video style="cursor:pointer" class="videoDemo" loop controls></a> <source src="assets/videos/Bicycle Marketplace demo.mp4" type="video/mp4"></video>
-                        <h2 style="cursor:pointer"><a href="http://www.mybikemarket.net">Click To Try Me!</a></h2>
+                        <video style="cursor:pointer" class="videoDemo" id="bikeVideo" controls><source src="assets/videos/Bicycle Marketplace demo.mp4" type="video/mp4"></video>
+                        <!-- <h2 style="cursor:pointer"><a href="http://www.mybikemarket.net">Click To Try Me!</a></h2> -->
                     </div>
                     <p class="videoClickP" style="cursor:pointer"><a class="clickforDemo" href="http://www.mybikemarket.net">Click for a Demo!</a></p>
                 </div>

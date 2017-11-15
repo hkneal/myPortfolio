@@ -329,7 +329,7 @@ ul {
     color: rgb(140, 181, 225);
 }
 
-@media screen and (aspect-ratio: 1366/1024) {
+@media only screen and (aspect-ratio: 1366/1024) {
     .main {
         margin-top: 6%;
     }
@@ -338,7 +338,7 @@ ul {
     }
 }
 
-@media screen and (aspect-ratio: 1024/1366) {
+@media only screen and (aspect-ratio: 1024/1366) {
     .main {
         margin-top: 8%
     }
@@ -354,7 +354,7 @@ ul {
     }
 }
 
-@media screen and (aspect-ratio: 1024/768) {
+@media only screen and (aspect-ratio: 1024/768) {
     .main {
         margin-top: 6%
     }
@@ -370,7 +370,7 @@ ul {
     }
 }
 
-@media screen and (aspect-ratio: 768/1024) {
+@media only screen and (aspect-ratio: 768/1024) {
     .main {
         margin-top: 8%
     }
@@ -389,9 +389,9 @@ ul {
     }
 }
 
-@media screen and (aspect-ratio: 736/414) {
+@media only screen and (aspect-ratio: 736/414) {
     .main {
-        margin-top: 7.4%
+        margin-top: 7.3%
     }
     .page {
         width: 79%;
@@ -400,7 +400,7 @@ ul {
         font-size: .7rem;
     }
     .sidebar {
-        padding-bottom: 37%;
+        padding-bottom: 42%;
     }
     ul {
         margin: 5%;
@@ -420,7 +420,7 @@ ul {
     }
 }
 
-@media screen and (aspect-ratio: 667/375) {
+@media only screen and (aspect-ratio: 667/375) {
     .main {
         margin-top: 7.4%
     }
@@ -451,7 +451,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .sidebar {
         padding-bottom: 27%;
     }
@@ -497,9 +497,12 @@ ul {
     #downloadA {
         font-size: .8rem;
     }
+    .sideTitle {
+        font-size: 1rem;
+    }
 }
 
-@media screen and (aspect-ratio: 414/736) {
+@media only screen and (aspect-ratio: 414/736) {
     .sidebar {
         padding-bottom: 30%;
     }
@@ -510,9 +513,15 @@ ul {
         font-size: .7rem;
         margin-top: 2%;
     }
+    .main {
+        margin-top: 9%;
+    }
 }
 
-@media screen and (max-width: 375px) {
+@media only screen and (max-width: 375px) {
+    .main {
+        margin-top: 13.1%
+    }
     .sideTitle {
         font-size: .7rem;
     }
