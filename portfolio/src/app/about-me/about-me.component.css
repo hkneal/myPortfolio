@@ -518,8 +518,13 @@ li {
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
 
-/* @media only screen and (aspect-ratio: 768/1024) { */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    #gaming {
+        margin-left: 17.2;
+    }
+}
 
 @media only screen and (max-width: 768px) {
     img {
@@ -563,15 +568,13 @@ li {
 
 @media only screen and (max-width: 720px) {}
 
-@media only screen and (max-width: 667px) {
+@media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: landscape) {
+    /* iphone 6, 7 */
     h2 {
         font-size: 1rem;
     }
     h1 {
         font-size: 2.5rem;
-    }
-    button {
-        font-size: .7rem;
     }
     p {
         font-size: 1rem;
@@ -588,7 +591,22 @@ li {
     .closeDetails {
         margin-left: 75%;
     }
+    #otherInterests {
+        margin-left: 30%;
+        font-size: 1.5rem;
+    }
+    #gaming {
+        margin-left: 23.2%;
+    }
+    #parenting {
+        margin-left: 22.2%;
+    }
+    #close {
+        margin-left: 10%;
+    }
 }
+
+@media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: portrait) {}
 
 @media only screen and (max-width: 480px) {
     h2 {

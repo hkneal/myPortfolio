@@ -280,6 +280,20 @@
         }
     }
     
+    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+        video {
+            height: 65%;
+        }
+        footer {
+            margin-top: 22%;
+        }
+        .description {
+            margin-top: 79.5%;
+        }
+    }
+    
+    @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+    
     @media only screen and (min-width: 414px) and (max-width: 736px) and (orientation: portrait) {
         /* iPhone 6+, 7+, 8+ plus */
         video {
@@ -339,6 +353,7 @@
     }
     
     @media only screen and (min-width: 414px) and (max-width: 736px) and (orientation: landscape) {
+        /* iPhone 6+, 7+, 8+ plus */
         .videoDiv {
             height: 31.9375rem;
         }
@@ -373,5 +388,21 @@
         }
         #otherInterests {
             margin-left: 35%;
+        }
+    }
+    
+    @media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: portrait) {
+        /* iphone 6, 7 */
+        .hobbies {
+            margin-top: 15rem;
+        }
+    }
+    
+    @media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: landscape) {
+        .description {
+            margin-top: 18%;
+        }
+        #close {
+            margin-left: 18%;
         }
     }

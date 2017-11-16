@@ -246,6 +246,39 @@ h2 {
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    h2 {
+        font-size: 2rem;
+    }
+    a {
+        font-size: 1.5rem;
+    }
+    footer {
+        margin-top: 15.5%;
+    }
+    .vertical-Line {
+        margin: 0%;
+    }
+    .treehouseMain {
+        margin-top: 6%;
+    }
+    .hobbies {
+        max-width: 80%;
+    }
+    .hobbies p {
+        font-size: 1rem;
+    }
+    .pictureViewer {
+        margin-top: 10%;
+    }
+    #treehouseH1 {
+        margin-left: 7%;
+    }
+    #gaming {
+        margin-left: 23%;
+    }
+}
+
 @media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
     .treehouseMobile h1 {
         font-size: 1.3rem;
@@ -315,7 +348,48 @@ h2 {
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    footer {
+        margin-top: 46%;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    a {
+        font-size: 1.5rem;
+    }
+    .treehouseMain {
+        margin-top: 8%;
+    }
+    .treehouseMobile h1 {
+        font-size: 1.5rem;
+    }
+    .hobbies {
+        margin-top: 56%;
+    }
+    .hobbies p {
+        font-size: 1rem;
+    }
+    #treehouseH1 {
+        margin-left: 4%;
+    }
+    #otherInterests {
+        margin-left: 32%;
+    }
+    #close {
+        margin-left: 18%;
+        font-size: 1rem;
+    }
+    #gaming {
+        margin-left: 23%;
+    }
+    #parenting {
+        margin-left: 17%;
+    }
+}
+
 @media only screen and (min-width: 414px) and (max-width: 736px) and (orientation: landscape) {
+    /* iPhone 6+, 7+, 8+ plus */
     img {
         max-width: 17%;
     }
@@ -347,6 +421,7 @@ h2 {
 }
 
 @media only screen and (min-width: 414px) and (max-width: 736px) and (orientation: portrait) {
+    /* iPhone 6+, 7+, 8+ plus */
     img {
         max-width: 31%;
     }
@@ -388,6 +463,24 @@ h2 {
         margin-left: 13%;
     }
     #gaming {
+        margin-left: 18%;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: portrait) {
+    .treehouseMain {
+        margin-top: 10.7%;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: landscape) {
+    .vertical-Line {
+        margin-left: 1%;
+    }
+    .hobbies {
+        margin-top: 7%;
+    }
+    #close {
         margin-left: 18%;
     }
 }
