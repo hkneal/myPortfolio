@@ -51,10 +51,11 @@ import { trigger,state,style,transition,animate, keyframes } from '@angular/anim
   ]
 })
 export class AboutMeComponent implements OnInit {
-  state: string = 'small';
-  showbikeDetails: boolean = false;
-  showbookDetails: boolean = false;
-  showhobbies: boolean = false;
+  state: String = 'small';
+  showbikeDetails: Boolean = false;
+  showbookDetails: Boolean = false;
+  showhawaii: Boolean = false;
+  showhobbies: Boolean = false;
 
   constructor(private _router: Router) { }
 
@@ -63,34 +64,37 @@ export class AboutMeComponent implements OnInit {
       if (!(evt instanceof NavigationEnd)) {
           return;
       }
-      window.scrollTo(0, 0)
+      window.scrollTo(0, 0);
   });
-  
+
   }
 
-  animate(){
+  animate() {
     this.state  = (this.state === 'small' ? 'large' : 'small');
   }
 
-  carpentry():void{
+  carpentry(): void {
     this._router.navigate(['/carpentry']);
   }
 
-  gaming():void{
+  gaming(): void {
     this._router.navigate(['/games']);
   }
 
-  parenting():void{
+  parenting(): void {
     this._router.navigate(['/parenting']);
   }
 
-  showBikeDetails():void{
+  showBikeDetails(): void {
     this.showbikeDetails = this.showbikeDetails ? false : true;
   }
-  showBookDetails():void{
+  showBookDetails(): void {
     this.showbookDetails = this.showbookDetails ? false : true;
   }
-  showHobbies():void{
+  showHawaii(): void {
+    this.showhawaii = this.showhawaii ? false : true;
+  }
+  showHobbies(): void {
     this.showhobbies = this.showhobbies ? false : true;
   }
 }

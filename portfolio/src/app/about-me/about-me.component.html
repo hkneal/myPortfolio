@@ -32,11 +32,11 @@
         </div>
     </div>
     <div [@slideAnimation]='state' class="alexa">
-        <p id="alexaDescription">Technology has always been a passion of mine, as part of the <a href="http://mashable.com/2015/05/21/oregon-trail-generation/#USjHIA4YEPq9">"Oregon Trail Generation"</a>, I grew up playing the popular video game, and I recall, trying to code my
-            own version of it. The enjoyment of playing that game, and the satisfaction of seeing my code actually do what I exepected it to do, (eg. coding my name in BASIC to scroll diagonally across the screen), lead me into Software Development. I
-            continue to have that passion and I'm able to express it and find those, "that's cool!" moments, through web design and development.
+        <p id="alexaDescription">Technology has always been a passion of mine. As part of the <a href="http://mashable.com/2015/05/21/oregon-trail-generation/#USjHIA4YEPq9">"Oregon Trail Generation"</a>, I grew up playing the popular video game and I recall trying to code my
+            own version. The enjoyment of playing that game and the satisfaction of seeing my code actually do what I exepected it to do (e.g., coding my name in BASIC to scroll diagonally across the screen), led me into Software Development. I continue
+            to have that passion and I'm able to express it and find those, "that's cool!" moments, through web design and development.
         </p>
-        <div class="projects" [ngClass]="{'projectsExpanded': showbikeDetails || showbookDetails}">
+        <div class="projects" [ngClass]="{'projectsExpanded': showbikeDetails || showbookDetails || showHawaii}">
             <h1 style="color:rgb(63, 64, 66)">Recent Projects</h1>
             <div class="desktopView">
                 <div class="videoContainer">
@@ -77,6 +77,26 @@
                             <li>Angular 4.4.6</li>
                             <li>Nodejs 5.4.0</li>
                             <li>Mongoose 4.11.4</li>
+                            <li>Express 4.13.4</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="videoContainer">
+                    <div class="videoDiv">
+                        <video style="cursor:pointer" class="videoDemo" loop autoplay><a href="http://www.ujhawaii.com"></a> <source src="assets/videos/ujHawaii.mp4"></video>
+                        <h2 style="cursor:pointer"><a href="http://www.ujhawaii.com">Click To Try Me!</a></h2>
+                    </div>
+                    <p class="videoClickP" style="cursor:pointer"><a class="clickforDemo" href="http://www.ujhawaii.com">Click for a Demo!</a></p>
+                </div>
+                <div class="projectDiv">
+                    <p class="projectDesc">UJHawaii - Personal Vacation web site setup to share photos of our Hawaii vacation!</p>
+                    <button style="cursor:pointer" (click)="showHawaii()" class="projectButton">More Details</button>
+                    <div *ngIf="showhawaii" class="projectDetails" (click)="showHawaii()">
+                        <h3 style="cursor:pointer" class="closeDetails">Close X</h3>
+                        <p sytle="color:white">This application incorporates image uploading to Amazon S3, Angular Carousel function, and photo size transitions. Built using:</p>
+                        <ul>
+                            <li>Angular 4.4.6</li>
+                            <li>Nodejs 5.4.0</li>
                             <li>Express 4.13.4</li>
                         </ul>
                     </div>
@@ -126,9 +146,30 @@
                         </ul>
                     </div>
                 </div>
+                <div class="videoContainer">
+                    <div class="videoDiv">
+                        <video style="cursor:pointer" class="videoDemo" loop autoplay><a href="http://www.ujhawaii.com"></a> <source src="assets/videos/ujHawaii.mp4"></video>
+                        <h2 style="cursor:pointer"><a href="http://www.ujhawaii.com">Click To Try Me!</a></h2>
+                    </div>
+                    <p class="videoClickP" style="cursor:pointer"><a class="clickforDemo" href="http://www.ujhawaii.com">Click for a Demo!</a></p>
+                </div>
+                <div class="projectDiv">
+                    <p class="projectDesc">UJHawaii - Personal Vacation web site setup to share photos of our Hawaii vacation!</p>
+                    <button style="cursor:pointer" (click)="showHawaii()" class="projectButton">More Details</button>
+                    <div *ngIf="showhawaii" class="projectDetails" (click)="showHawaii()">
+                        <h3 style="cursor:pointer" class="closeDetails">Close X</h3>
+                        <p sytle="color:white">This application incorporates image uploading to Amazon S3, Angular Carousel function, and photo size transitions. Built using:</p>
+                        <ul>
+                            <li>Angular 4.4.6</li>
+                            <li>Nodejs 5.4.0</li>
+                            <li>Express 4.13.4</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+            <!-- *********************************** -->
             <a id="alexaTry" href="https://www.amazon.com/hiramk-Heres-a-Fun-Fact/dp/B072MVZJ7G/ref=sr_1_1?s=digital-skills&ie=UTF8&qid=1508476774&sr=1-1&keywords=here%27s+a+fun+fact"><img id="alexaImg" src="assets/images/AlexaSkill.png" alt=""> Try My Alexa Skill!</a>
         </div>
     </div>
-    <footer [ngClass]="{'footerExpanded': showbikeDetails || showbookDetails}" [@footerAnimation]='state'></footer>
+    <footer [ngClass]="{'footerExpanded': showbikeDetails || showbookDetails || showhawaii }" [@footerAnimation]='state'></footer>
 </main>
