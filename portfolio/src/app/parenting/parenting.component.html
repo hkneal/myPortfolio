@@ -1,9 +1,9 @@
 <div class="parentingMain">
-    <img (mouseover)="animateIntro()" id="backgroundImage" src="assets/images/Parenting/DSC_1555.jpg" alt="">
+    <img [@imageFadeAnimation]='state' (mouseover)="animateIntro()" id="backgroundImage" src="assets/images/Parenting/DSC_1555.jpg" alt="">
     <div [@introAnimation]='state' class="introduction">
         <p>Without a doubt, one of my favorite activities is being a Dad to my amazing daughter!</p>
     </div>
-    <div id="favoritePics">
+    <!-- <div id="favoritePics">
         <p>Some of my favorite pictures:</p>
     </div>
     <div id="smallPicsDiv">
@@ -20,7 +20,7 @@
         <img [@imageFadeAnimation]='state' class="smallPics" src="assets/images/Parenting/IMG_1695.jpg" alt="">
         <img [@imageFadeAnimation]='state' class="smallPics" src="assets/images/Parenting/IMG_0047.jpg" alt="">
         <img [@imageFadeAnimation]='state' class="smallPics" src="assets/images/Parenting/IMG_0055.jpg" alt="">
-    </div>
+    </div> -->
     <div [@menuAnimation]='state' class="hobbies" (click)="animateMenu()">
         <h2 id="otherInterests"> My other passions</h2>
         <h3 style="cursor:pointer" id="close">Close X</h3>

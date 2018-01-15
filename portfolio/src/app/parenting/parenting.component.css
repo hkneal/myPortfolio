@@ -6,9 +6,9 @@
          
          footer {
              background-color: black;
-             height: 3.75em;
+             height: 4em;
              width: 100%;
-             margin-top: 8%;
+             margin-top: 14.6%;
              text-align: center;
              padding-bottom: 1%;
          }
@@ -91,7 +91,7 @@
              /* position: absolute; */
              max-width: 50%;
              margin-left: 25%;
-             margin-top: -25rem;
+             margin-top: -33rem;
              z-index: 9999;
              border-radius: 50px;
              border: 2px solid rgb(253, 254, 255);
