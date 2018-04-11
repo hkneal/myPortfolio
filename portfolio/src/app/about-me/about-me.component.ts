@@ -56,6 +56,7 @@ export class AboutMeComponent implements OnInit {
   showbookDetails: Boolean = false;
   showhawaii: Boolean = false;
   showhobbies: Boolean = false;
+  showshorturl: Boolean = false;
 
   constructor(private _router: Router) { }
 
@@ -96,5 +97,8 @@ export class AboutMeComponent implements OnInit {
   }
   showHobbies(): void {
     this.showhobbies = this.showhobbies ? false : true;
+  }
+  showShortUrl(): void {
+    this.showshorturl = this.showshorturl ? false : true;
   }
 }
