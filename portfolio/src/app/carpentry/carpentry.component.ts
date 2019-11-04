@@ -92,6 +92,7 @@ export class CarpentryComponent implements OnInit {
   ngOnInit() {
     this._router.events.subscribe((evt) => {
       if (!(evt instanceof NavigationEnd)) {
+          console.log("Triggerd in init");
           return;
       }
       window.scrollTo(0, 0)
@@ -103,6 +104,7 @@ export class CarpentryComponent implements OnInit {
   }
 
   animateEntertainmentCenter(){
+    // console.log("In animate Entertainment")
     this.state = (this.state === 'menu' ? 'entertainment' : this.state === 'beds' ? 'entertainment' : this.state === 'treehouse' ? 'entertainment' : 'entertainment');
   }
 

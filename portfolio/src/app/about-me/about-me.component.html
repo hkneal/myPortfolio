@@ -41,7 +41,7 @@
             <div class="desktopView">
               <div class="videoContainer">
                   <div class="videoDiv">
-                      <video style="cursor:pointer" class="videoDemo" loop autoplay><a href="http://inputmynote.com"></a> <source src="https://s3.amazonaws.com/hns3bucket/NotesApp.mp4"></video>
+                      <video style="cursor:pointer" class="videoDemo" loop autoplay><a href="http://inputmynote.com"></a> <source src="assets/videos/NotesApp.mp4"></video>
                       <h2 style="cursor:pointer"><a href="http://inputmynote.com">Click To Try Me!</a></h2>
                   </div>
                   <p class="videoClickP" style="cursor:pointer"><a class="clickforDemo" href="http://inputmynote.com">Click for a Demo!</a></p>
@@ -127,6 +127,27 @@
             <div class="mobileView">
                 <div class="videoContainer">
                     <div class="videoDiv">
+                        <video style="cursor:pointer" class="videoDemo" loop autoplay><a href="http://inputmynote.com"></a> <source src="https://s3.amazonaws.com/hns3bucket/NotesApp.mp4"></video>
+                        <h2 style="cursor:pointer"><a href="http://inputmynote.com">Click To Try Me!</a></h2>
+                    </div>
+                    <p class="videoClickP" style="cursor:pointer"><a class="clickforDemo" href="http://inputmynote.com">Click for a Demo!</a></p>
+                </div>
+                <div class="projectDiv">
+                    <p class="projectDesc">NotesApp - Note taking mobile application / RESTful API that lets users view and post notes. Secure login and registration with password validation and encryption.</p>
+                    <button style="cursor:pointer" (click)="showBikeDetails()" class="projectButton">More Details</button>
+                    <div *ngIf="showbikeDetails" class="projectDetails" (click)="showBikeDetails()">
+                        <h3 style="cursor:pointer" class="closeDetails">Close X</h3>
+                        <p sytle="color:white">Amazon EC2, SES, & S3, SSL secured, with email validation, password encyrption, and search funcionalities. Built using:</p>
+                        <ul>
+                            <li>Django 2.1.1</li>
+                            <li>Django REST Framework 3.8.2</li>
+                            <li>Python 3.7</li>
+                            <li>MySQL 8.0.12</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="videoContainer">
+                    <div class="videoDiv">
                         <video style="cursor:pointer" class="videoDemo" controls><source src="assets/videos/hnBookReview.mp4" type="video/mp4"></video>
                         <!-- <h2 style="cursor:pointer"><a href="http://www.hnbookreviews.com">Click To Try Me!</a></h2> -->
                     </div>
@@ -184,27 +205,6 @@
                             <li>Django REST Framework 3.8.1</li>
                             <li>Python 2.7.13</li>
                             <li>MySQL 5.7.20</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="videoContainer">
-                    <div class="videoDiv">
-                        <video style="cursor:pointer" class="videoDemo" id="bikeVideo" controls><source src="https://s3.amazonaws.com/hns3bucket/bicycleMarket.mp4" type="video/mp4"></video>
-                        <!-- <h2 style="cursor:pointer"><a href="http://inputmynote.com">Click To Try Me!</a></h2> -->
-                    </div>
-                    <p class="videoClickP" style="cursor:pointer"><a class="clickforDemo" href="http://inputmynote.com">Click for a Demo!</a></p>
-                </div>
-                <div class="projectDiv">
-                    <p class="projectDesc">Bicycle Marketplace - Bulletin board type web application that lets users view and post bicycle ads. Secure login and registration with password validation and encryption.</p>
-                    <button style="cursor:pointer" (click)="showBikeDetails()" class="projectButton">More Details</button>
-                    <div *ngIf="showbikeDetails" class="projectDetails" (click)="showBikeDetails()">
-                        <h3 style="cursor:pointer" class="closeDetails">Close X</h3>
-                        <p sytle="color:white">This application incorporates image uploading to Amazon S3, form validation, password encyrption, session and cookie manipulation, and advanced search funcionalities. Built using:</p>
-                        <ul>
-                            <li>Angular 4.4.6</li>
-                            <li>Nodejs 5.4.0</li>
-                            <li>Mongoose 4.11.4</li>
-                            <li>Express 4.13.4</li>
                         </ul>
                     </div>
                 </div>
