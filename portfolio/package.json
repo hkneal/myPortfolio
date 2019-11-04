@@ -23,11 +23,12 @@
     "@angular/router": "^8.2.12",
     "angular": "^1.7.5",
     "core-js": "^3.3.4",
+    "mixin-deep": "^2.0.1",
     "rxjs": "^6.5.3",
+    "rxjs-compat": "^6.0.0-rc.0",
     "tslib": "^1.10.0",
     "web-animations-js": "^2.3.2",
-    "zone.js": "~0.9.1",
-    "rxjs-compat": "^6.0.0-rc.0"
+    "zone.js": "~0.9.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.14",
