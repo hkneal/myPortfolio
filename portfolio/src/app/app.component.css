@@ -134,6 +134,12 @@ nav {
     vertical-align: middle;
 }
 
+@media only screen and (max-width: 736px) {
+    nav {
+        margin-left: 2% !important;
+    }
+}
+
 @media only screen and (max-width: 1030px) {
     nav {
         margin-left: 32%;

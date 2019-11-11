@@ -13,13 +13,13 @@ const routes: Routes = [
     { path: 'resume', pathMatch: 'full', component: ResumeComponent, data: { depth: 2 } },
     // { path: 'projects', pathMatch: 'full', component: ProjectsComponent, data: { depth: 3 } },
     { path: 'carpentry', component: CarpentryComponent, data: { depth: 4 }},
-    { path: 'games', component: GamesComponent, data: { depth: 5 }},
-    { path: 'parenting', component: ParentingComponent, data: { depth: 6 }},
+    // { path: 'games', component: GamesComponent, data: { depth: 5 }},
+    // { path: 'parenting', component: ParentingComponent, data: { depth: 6 }},
     { path: 'home', pathMatch: 'full', redirectTo: '' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

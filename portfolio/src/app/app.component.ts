@@ -173,13 +173,13 @@ import { trigger,group,style,transition,animate,query, state } from '@angular/an
     ]),
     trigger('contactAnimation', [
       state('in', style({
-        transform: 'translate3d(0, 0, 0)', opacity: 1,
+        transform: 'translateX(0)', opacity: 1,
       })),
       state('out', style({
-        transform: 'translate3d(100%, 0, 0)', opacity: 0,
+        transform: 'translateX(200%)', opacity: 0,
       })),
 
-      transition('in <=> out', animate('300ms ease-in-out')),
+      transition('in <=> out', animate('750ms ease-in-out')),
     ]),
   ]
 })

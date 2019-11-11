@@ -18,16 +18,18 @@
         <div *ngIf="showhobbies" class="hobbies" (click)="showHobbies()">
             <h2 id="otherInterests"> My other passions</h2>
             <h3 style="cursor:pointer" id="close">Close X</h3>
-            <p>click to explore further</p>
+            <!-- <p>click to explore further</p> -->
             <a style="cursor:pointer"><img (click)="carpentry()" id="building" src="assets/images/IMG_0534.jpg" alt=""></a>
             <!-- <a style="cursor:pointer"><img (click)="gaming()" id="gamingPic" src="assets/images/IMG_0334.jpg" alt=""></a> -->
             <!-- <a style="cursor:pointer"><video loop autoplay> <source src="/assets/videos/Chess_Play.mp4"></video></a> -->
             <!-- <a style="cursor:pointer"><video (click)="gaming()" loop autoplay> <source src="/assets/videos/Chess_Play_color.mp4"></video></a> -->
-            <a class="desktopView" style="cursor:pointer"><video (click)="gaming()" loop autoplay> <source src="/assets/videos/Chess_gamplay_color_low.mp4"></video></a>
+            <img id="gamingPic" src="assets/images/IMG_0334.jpg">
+            <!-- <a class="desktopView" style="cursor:pointer"><video (click)="gaming()" loop autoplay> <source src="/assets/videos/Chess_gamplay_color_low.mp4"></video></a>  -->
             <video class="mobileView" controls> <source src="/assets/videos/Chess_gamplay_color_low.mp4" type="video/mp4"></video>
-            <a style="cursor:pointer"><img (click)="parenting()" id="parentingPic" src="assets/images/IMG_1370.jpg" alt=""></a>
+            <!-- <a style="cursor:pointer"><img (click)="parenting()" id="parentingPic" src="assets/images/IMG_1370.jpg" alt=""></a> -->
+            <img (click)="parenting()" id="parentingPic" src="assets/images/IMG_1370.jpg" alt="">
             <a id="carpentry" (click)="carpentry()" style="cursor:pointer">Carpentry</a>
-            <a id="gaming" (click)="gaming()" style="cursor:pointer">Gaming</a>
+            <a id="gaming" (click)="gaming()" style="cursor:pointer">Video Games / Chess </a>
             <a id="parenting" (click)="parenting()" style="cursor:pointer">Parenting</a>
         </div>
     </div>
@@ -127,7 +129,7 @@
             <div class="mobileView">
                 <div class="videoContainer">
                     <div class="videoDiv">
-                        <video style="cursor:pointer" class="videoDemo" loop autoplay><a href="http://inputmynote.com"></a> <source src="https://s3.amazonaws.com/hns3bucket/NotesApp.mp4"></video>
+                        <video style="cursor:pointer" class="videoDemo" controls><a href="http://inputmynote.com"></a> <source src="https://s3.amazonaws.com/hns3bucket/NotesApp.mp4"></video>
                         <h2 style="cursor:pointer"><a href="http://inputmynote.com">Click To Try Me!</a></h2>
                     </div>
                     <p class="videoClickP" style="cursor:pointer"><a class="clickforDemo" href="http://inputmynote.com">Click for a Demo!</a></p>
@@ -169,7 +171,7 @@
                 </div>
                 <div class="videoContainer">
                     <div class="videoDiv">
-                        <video style="cursor:pointer" class="videoDemo" loop autoplay><a href="http://www.ujhawaii.com"></a> <source src="assets/videos/ujHawaii.mp4"></video>
+                        <video style="cursor:pointer" class="videoDemo" controls><a href="http://www.ujhawaii.com"></a> <source src="assets/videos/ujHawaii.mp4"></video>
                         <h2 style="cursor:pointer"><a href="http://www.ujhawaii.com">Click To Try Me!</a></h2>
                     </div>
                     <p class="videoClickP" style="cursor:pointer"><a class="clickforDemo" href="http://www.ujhawaii.com">Click for a Demo!</a></p>
@@ -189,7 +191,7 @@
                 </div>
                 <div class="videoContainer">
                     <div class="videoDiv">
-                        <video style="cursor:pointer" class="videoDemo" loop autoplay><a href="http://www.urlittleurl.com"></a> <source src="assets/videos/urlittleurl.mp4"></video>
+                        <video style="cursor:pointer" class="videoDemo" controls><a href="http://www.urlittleurl.com"></a> <source src="assets/videos/urlittleurl.mp4"></video>
                         <h2 style="cursor:pointer"><a href="http://www.urlittleurl.com">Click To Try Me!</a></h2>
                     </div>
                     <p class="videoClickP" style="cursor:pointer"><a class="clickforDemo" href="http://www.urlittleurl.com">Click for a Demo!</a></p>

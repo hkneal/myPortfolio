@@ -278,18 +278,18 @@ li {
     margin-top: 2%;
 }
 
-#building {
-    max-width: 26%;
+#building, #gamingPic {
+    max-width: 28.5%;
     margin: 2.5%;
 }
 
 #parentingPic {
-    max-width: 23%;
+    max-width: 25%;
     margin: 2%;
     margin-left: 2.3%;
 }
 
-#building,
+#building, #gamingPic,
 #parentingPic {
     margin-top: 1%;
     margin-bottom: 0px;
@@ -332,11 +332,11 @@ li {
     display: inline-block;
     margin: 1%;
     margin-top: 0px;
-    margin-left: 26%;
+    margin-left: 16%;
 }
 
 #gaming {
-    margin-left: 22.2%;
+    /* margin-left: 14.2%; */
     position: inherit;
 }
 
@@ -479,7 +479,9 @@ li {
     #carpentry {
         margin-left: 7.5%;
     }
-    #gaming,
+    #gaming {
+        margin-left: 3%;
+    }
     #parenting {
         margin-left: 18.2%;
     }
