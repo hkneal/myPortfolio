@@ -12,7 +12,7 @@
   "dependencies": {
     "express": "^4.16.3",
     "mixin-deep": "^2.0.1",
-    "set-value": "^3.0.1"
+    "set-value": "^4.0.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.14",
